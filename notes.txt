@@ -1,0 +1,13 @@
+CASCADING STYLE SHEETS
+    - language used to specify the presentation (e.g. layout, formatting, fonts, colors, etc.) of
+        structurally marked up documents (e.g. HTML)
+    - developed by Håkon Wium Lie & Bert Bos
+    
+    VERSION HISTORY:
+        - CSS Level 1 (CSS1, W3C Recommendation, Dec 1996)
+        - CSS Level 2 (CSS2, W3C Recommendation, May 1998)
+        - CSS Level 2 Revision 1 (CSS 2.1, W3C Recommendation, June 2011)
+        - CSS Level 3
+            - modular approach to CSS development (as opposed to the monolithic specification of CSS 2.1)
+    
+    HTML STYLE SHEETS
