@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="wilih=device-wilih, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>WebTech2018</title>
+</head>
+
+<body>
+    <header>
+        <h1>Web Systems and Technologies<br>
+            <span class="h11">AY: 2017-2018 Second Semester</span></h1>
+    </header>
+    <div>
+        <nav class="horizontal">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="">Prelims</a></li>
+                <li><a href="">Midterms</a></li>
+                <li><a href="">Finals</a></li>
+            </ul>
+        </nav>
+        <nav class="vertical">
+            <ul>
+                <li><a href="#1">World Wide Web</a></li>
+                <li><a href="#2">Hyper Text Transfer Protocol</a></li>
+                <li><a href="#3">Hyper Text Markup Language</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+    <div class="main_cont">
+        <div class="cont1">
+            <div class="cont1_l">
+                <span class="anchor" id="1"></span>
+                <h2>World Wide Web</h2>
+                    <ul>
+                        <li>Collection of web resources and applications: applications that can make us access web resources by the use of the internet.</li>
+                        <li>Developed by Sir Tim Berners Lee in 1989</li>
+                        <li>Created with the purpose of sharing ideas among researchers.</li>
+                    </ul>
+                
+                    <h3>Types of Applications</h3>
+                    <ul>
+                        <li><h4>Server</h4></li>
+                            <ul>
+                                <li>They host web resources</li>
+                                <li>Wait for client to give request resources</li>
+                            </ul>
+                        <li><h4>Client</h4></li>
+                            <ul>
+                                <li>They access websites</li>
+                                <li>They give requests to servers</li>
+                            </ul>
+                        <li><h4>Spiders</h4></li>
+                            <ul>
+                                <li>Applications that crawl the Web</li>
+                            </ul>
+                        <li><h4>Internet</h4></li>
+                            <ul>
+                                <li>Global network of networks</li>
+                            </ul>
+                    </ul>
+            </div>
+                <div class="cont1_r">
+                    <img class ="stb" src="../img/stb.jpg" alt="Sir Tim Berners-Lee">
+                    <p>Sir Tim Berners-Lee<br>Developer of WWW, HTTP, HTML, and URL</p>
+                </div>
+        </div>
+
+
+        <div class="cont2">
+            <span class="anchor" id="2"></span>
+            <h2><abbr title="Hypertext Transfer Protocol">HTTP</abbr></h2>
+                <ul>
+                    <li>Application layer communications protocol used to access resources on the WWW</li>
+                    <li>Invented by Tim Berners - Lee of CERN in 1989</li>
+                    <li>Jointly developed by the W3C and the IETF (Internet Engineering Task Force)</li>
+                </ul>
+                
+                <ul>
+                    <li><h3>Version History</h3></li>
+                        <ul>
+                            <li>HTTP 0.9(1991)</li>
+                            <li>HTTP 1.0 (RFC 1945, May 1996)</li>
+                            <li>HTTP 1.1 (RFC 2068 Jan 1997, RFC 2616 Jun 1999), (RFC 7230-7235(Jun 2014)</li>
+                            <li>HTTP 2 (RFC 7540 May 2015)</li>
+                        </ul>
+                    <li><h3>HTTP Fundamentals</h3></li>
+                        <ul>
+                            <li>HTTP typically runs on top of TCP/IP, using TCP port 80 by default, or TCP port 443 for HTTPS (HTTP over SSL/TLS)</li>
+                            <li>Servers - Origin Servers, Proxy Servers, Gateways, and Tunnels.</li>
+                            <li>Uses a request response standard protocol</li>
+                            <li>The client sends an HTTP request message to the server</li>
+                            <li>The server processes the request and replies with an HTTP response message</li>
+                        </ul>
+                    <li><h4>Clients</h4></li>
+                        <ul>
+                            <li>web browser, web crawlers/spiders, other end user tools and applications</li>
+                        </ul>
+                    <li><h4>Servers</h4></li>
+                        <ul>
+                            <li>HTTP is based on a client server architecture</li>
+                            <li>Origin Servers</li>
+                            <li>Proxy servers, gateway, tunnels</li>
+                        </ul>
+                    <li><h4>HTTP is stateless communications protocol</h4></li>
+                        <ul>
+                            <li>Servers do not keep information about clients in between requests.</li>
+                        </ul>
+                    <li><h4>HTTP resources are identified using URLs, or more specially, HTTP URLs</h4></li>
+                        <ul>
+                            <li>-Scheme (HTTP/HTTPs)</li>
+                        </ul>
+                    <li><h4>Authority</h4></li>
+                        <ul>
+                            <li>User information authentication credentials(deprecated)</li>
+                            <li>Host - domain name (resolved to an IP Aliress using DNS) of the server where the resource resides/will be created.</li>
+                            <li>Port Number</li>
+                        </ul>
+                    <li><h4>Path to resource (resolved relative to the document root on the server)</h4></li>
+                        <ul>
+                            <li>May refer to a static/dynamic resource</li>
+                        </ul>
+                    <li><h4>Query in HTTP</h4></li>
+                        <ul>
+                            <li>Typically provided as key = value pairs,with ampersand(&) separators between key value pairs; may be URL - Encoded</li>
+                        </ul>
+                </ul>
+                   
+            
+                <h3>HTTP Request Message</h3>
+                    <ul>
+                        <li><h4>Request Line </h4>(CRLF - terminated line consisting of three spaces separated values)</li>
+                        <ul>
+                            <li>Method</li>
+                            <li>Request</li>
+                            <li>Protocol Version</li>
+                        </ul>
+                    </ul>
+                        
+                <h3>HTTP Request Methods</h3>
+                    <ul>
+                        <li><h4>GET</h4></li>
+                            <ul>
+                            <li>it is used to transfer a selected presentation of the target resource. The retrieved resource is returned in  the message body of the response as entiy. Most commonly used HTTP method that is used to request from the server the retrieval of the source identified by the request URI; the retrieved resource is returned in the message body as an entity. Can be combined with conditional and/or range request headers to effect conditional and/or partial resource retrieval Must be supported by all general-purpose servers.</li>
+                            </ul>
+                        <li><h4>HEAD</h4></li>
+                            <ul>
+                            <li>returns only the status line and message headers returned by a GET request, without the message body.</li>
+                            </ul>
+                        <li><h4>POST</h4></li>
+                            <ul>
+                            <li>typically used in submitting HTML Form Data.</li>
+                            </ul>
+                        <li><h4>PUT </h4></li>
+                            <ul>
+                            <li>create or replace the state of target request.</li>
+                            </ul>
+                        <li><h4>DELETE</h4></li>
+                            <ul>
+                            <li>used to delete/remove a resource indentified by the Uniform Resource Identifier(URI)</li>
+                            </ul>
+                        <li><h4>OPTIONS </h4></li>
+                            <ul>
+                            <li> used to request information about the communication options available for the target resources</li>
+                            </ul>
+                        <li><h4>TRACE </h4></li>
+                            <ul>
+                            <li>requests a remote, application-level loopback of the request message</li>
+                            <li>typically  used for testing/diagnostics of the request/response.</li>
+                            </ul>
+                        <li><h4>CONNECT </h4></li>
+                            <ul>
+                            <li>requests the establishment of a tunnel; reserved for the use of tunneling proxy servers.</li>
+                            </ul>
+                    </ul>
+                    
+                <h3>Method Properties</h3>
+                    <ul>
+                        <li><h4>Safe Methods</h4></li>
+                            <ul>
+                                <li>GET, HEAD, OPTIONS, TRACE</li>
+                                <li>client does not request and does not expect, any state change on the origin server as a result of applying the method to a target resource.</li>
+                            </ul>
+                        <li><h4>Idempotent Method</h4></li>
+                            <ul>
+                                <li>GET, HEAD, OPTIONS, TRACE, PUT, DELETE</li>
+                                <li>intended effect on the server of multiple identical requests with the method is the sameas the effect of a single request.</li>
+                            </ul>
+                        <li><h4>Cacheable Methods</h4></li>
+                            <ul>
+                                <li>GET, HEAD, POST</li>
+                                <li>no message because it is laready cached</li>
+                                <li>indicates that the response to a method is allowed to be stored for future use.</li>
+                            </ul>
+                    </ul>
+                    
+                <h3>HTTP Status Codes</h3>
+            </ul>
+			
+			<table>
+			 <head><b>Informational(1xx)</b></head>
+			  <tr>
+				<th>100</th>
+				<td>Continue</td>
+				<th>101</th>
+				<td>Switching Protocols</td>
+			  </tr>
+			</table>
+			
+			<table>
+			 <head><b>Success(2xx)</b></head>
+			  <tr>
+				<th>200</th>
+				<td>OK</td>
+				<th>201</th>
+				<td>Created</td>
+				<th>202</th>
+				<td>Accepted</td>
+			  </tr>
+			  <tr>
+				<th>203</th>
+				<td>Non-Authoritative information</td>
+				<th>204</th>
+				<td>No Content</td>
+				<th>205</th>
+				<td>Reset Content</td>
+			  </tr>
+			  <tr>
+				<th>206</th>
+				<td>Partial Content</td>
+			  </tr>
+			</table>
+			
+			<table>
+			<head><b>Redirection(3xx)</b></head>
+			  <tr>
+				<th>300</th>
+				<td>Multiple Choices</td>
+				<th>301</th>
+				<td>Moved Permanently</td>
+				<th>302</th>
+				<td>Found</td>
+			  </tr>
+			  <tr>
+				<th>303</th>
+				<td>See Other</td>
+				<th>304</th>
+				<td>Not Modified</td>
+				<th>305</th>
+				<td>Use Proxy</td>
+			  </tr>
+			  <tr>
+				<th>306</th>
+				<td>Unused</td>
+				<th>307</th>
+				<td>Temporary Redirection</td>
+			  </tr>
+			</table>
+			
+			<table>
+			 <head><b>Client Error(4xx)</b></head>
+			  <tr>
+				<th>400</th>
+				<td>Bad Request</td>
+				<th>401</th>
+				<td>Unauthorized</td>
+				<th>402</th>
+				<td>Payment Required</td>
+			  </tr>
+			  <tr>
+				<th>403</th>
+				<td>Forbilien</td>
+				<th>404</th>
+				<td>Not Found</td>
+				<th>405</th>
+				<td>Method not Allowed</td>
+			  </tr>
+			  <tr>
+				<th>406</th>
+				<td>Not Acceptable</td>
+				<th>407</th>
+				<td>Proxy Authentication</td>
+				<th>408</th>
+				<td>Request Timeout</td>
+			  </tr>
+			  <tr>
+				<th>409</th>
+				<td>Conflict</td>
+				<th>410</th>
+				<td>Gone</td>
+				<th>411</th>
+				<td>Length Required</td>
+			  </tr>
+			  <tr>
+				<th>412</th>
+				<td>Precondition Failed</td>
+			  </tr>
+			</table>
+			
+			<table>
+			  <tr>
+			  <head><b>Server Error(5xx)</b></head>
+				<th>500</th>
+				<td>Internal Server Error</td>
+				<th>501</th>
+				<td>Not Implemented</td>
+				<th>502</th>
+				<td>Bad Gateway</td>
+			  </tr>
+			  <tr>
+				<th>503</th>
+				<td>Service Unavailable</td>
+				<th>504</th>
+				<td>Gateway timeout</td>
+				<th>505</th>
+				<td>HTTP Version not Supported</td>
+			  </tr>
+			</table>
+            <ul>
+			 <h3>HTTP Message Headers</h3>
+                    <li><h4>General Header Fields</h4>it is applicable to the whole (client and server).</li>
+                        <ul>
+                        <li>Cache Control</li>
+                        <li>Connection</li>
+                        <li>Date</li>
+                        <li>Pragma</li>
+                        <li>Trailer</li>
+                        <li>Transfer Encoding</li>
+                        <li>Via</li>
+                        <li>Upgrade</li>
+                        </ul>
+                    <li><h4>Request Header Fields</h4>it is applicable to clients only.</li>
+                        <ul>
+                        <li>Accept</li>
+                        <li>Accept-Charset</li>
+                        <li>Accept-Encoding</li>
+                        <li>Accept-Language</li>
+                        <li>Authorization</li>
+                        <li>Expect</li>
+                        <li>From</li>
+                        <li>Host</li>
+                        <li>If-match</li>
+                        <li>If-modified-since</li>
+                        <li>If-none-match</li>
+                        <li>If-range</li>
+                        <li>If-unmodified-since</li>
+                        <li>Max-forwards</li>
+                        <li>Proxy-Authorization</li>
+                        <li>Range</li>
+                        <li>Referer</li>
+                        <li>User Agent</li>
+                        </ul>
+                    <li><h4>Response Header Fields</h4></li>
+                        <ul>
+                        <li>Accept-Range</li>
+                        <li>Age</li>
+                        <li>ETag</li>
+                        <li>Location</li>
+                        <li>Retry After</li>
+                        <li>Server</li>
+                        <li>Vary</li>
+                        <li>WWW-Authenticate</li>
+                        <li>Proxy-Authenticate</li>
+                        </ul>
+                    <li><h4>Entity Header Fields</h4></li>
+                        <ul>
+                        <li>Allow</li>
+                        <li>Content-Encoding</li>
+                        <li>Content-Language</li>
+                        <li>Content-Length</li>
+                        <li>Content-Location</li>
+                        <li>Content-MD5</li>
+                        <li>Content-Range</li>
+                        <li>Content-Type</li>
+                        <li>Expires</li>
+                        <li>Last Modified</li>
+                        </ul>
+                <h3>HTTP Extensions</h3>
+                    <li>HTTP can be extended by defining new request methods, message headers, and/or status codes, and then implementing sewers and/or clients that make use of the new functionality.</li>
+                        <li><h4>Example:</h4></li>
+                        <li>WebDAV (RFC 4918)</li>
+                            <ul>
+                            <li>Request Methods -  PROPFIND, PROPPATCH, MKCOL, COPY, MOVE, LOCK, UNLOCK.</li>
+                            <li>Message Headers - DAV, Depth, Destination, If, Lock-Token,Overwrite, Timeout.</li>
+                            <li>Status Codes - (207) Multi-Status, (422) Unprocessable Entity, (423) Locked, (424) Failed Dependency.</li>
+                            </ul>
+                
+                <span class="anchor" id="3"></span>
+                <h2>Hypertext Markup Language (HTML)</h2>          
+                    <li>Language used to mark up documents (i.e.web pages) in the world wide web.</li>
+                    <li>Application of SGML.</li>
+                    <li>Historically, HTML was used to specify the structure and content of web pages, as well as their presentation.</li>
+                    <li>Initially developed at CERN, then the IETF, then the W3C and then also the WHATWG.</li>
+                    
+                    <h3>Version History: </h3>
+                        <ul>
+                            <li><h4>Pre-standardization</h4></li>
+                                <ul>
+                                    <li>HTML Tags, by Tim Berners-Lee, late 1991.</li>
+                                    <li>Hypertext Markup Language Internet Draft, by Tim Berners-Lee and Dan Connoly, published by the IETF in mid - 1993
+                                     HTML (Hypertext Markup Format) Internet Draft by Dave Raggett, late 1993.</li>
+                                </ul>
+                            <h4>Standards: </h4>
+                            <ul>
+                                <li><h4>HTML 2.0 (RFC 1866, Nov 1995)</h4></li>
+                                <li><h4>Supplemental RFCs:</h4></li>
+                                    <ul>
+                                        <li>Form-based File Upload (RFC 1867, Nov 1995).</li>
+                                        <li>HTML tables (RFC 1942, May 1996).</li>
+                                        <li>Client-Side Image Maops (RFC 1980, Aug 1996).</li>
+                                        <li>Internationalization of HTML (RFC 2070, Jan 1997).</li>
+                                    </ul>
+                                <li><h4>HTML 3.2 (W3C Recommendation, Jan 1997)</h4></li>
+                                <li><h4>HTML 4.0 (W3C Recommendation, Dec 1997)</h4></li>
+                                <li><h4>HTML 4.01 (W3C Recommendation, Dec 1999)</h4></li>
+                                    <ul>
+                                        <li>Introduced deprecation of presentational elements and attributes in favor of style sheets.</li>
+                                        <li>Strict, transitional, frameset liDs.</li>
+                                    </ul>
+                                <li><h4>XHTML</h4></li>
+                                <h4>Reformulation of HTML in XML: </h4>
+                                    <ul>
+                                        <li>Intended to facilitate the introduction of new HTML elements and/or attributes, provide inter-operability between HTML and XML-based system, and leverage the use of XML tools in creating, editing, and parsing HTML.</li>
+                                        <li>Sought to move the internet - content dev't community from the dats of malformed, non-standard HTML markup into the well-formed, valid world of XML.</li>
+                                    </ul>
+                                <li><h4>XHTML 1.0 (W3C recommendation, Jan 2000)</h4></li>
+                                <li><h4>XHTML 1.1 Module-based XHTML (W3C Recommendation, May 2001)</h4></li>
+                                <li><h4>HTML 5</h4></li>
+                                    <ul>
+                                        <li>Arose from the effort to evolve HTML (instead of replacing it) to aliress backward compatibility issues that hindered the adaption of XHTML, as well as to aliress the emerging needs of modern web applications.</li>
+                                        <li>Work on HTML5 was initially undertaken by the WHATWG in 2004, with the W3C signifying interest to participate in the effort in 2006; the first draft of HTML5 was published in 2008 (edited by Ian Hickson).</li>
+                                        <li>HTML5 incorporated specifications from HTML existing APIs and introduced new APIs as well.</li>
+                                    </ul>
+                                <li><h4>HTML5 (W3C Recommendation, Oct 2014)</h4></li>
+                                <li><h4>HTML5.1 (W3C Recommendation, Nov 2016)</h4></li>
+                                <li><h4>HTML5.2 (W3C Recommendation, Dec 2017)</h4></li>
+                                <li><h4>HTML Living Standards (WHATWG)</h4></li>
+                            </ul>
+                        </ul>    
+                
+                        
+                <h3>HTML Document Structure</h3>
+                    <ul>
+                        <li><h4>Version Information: </h4></li>
+                        <li><h4>Root Element (HTML)</h4></li>
+                            <ul>
+                                <li>declarative header section containing document metadata, delimited by the head element.</li>
+                                <li>Document body containing the document's actual content, delimited by either the body element or the frameset element (Obsolete in HTML 5).</li>
+                            </ul>
+                    </ul>
+                    
+                <h3>HTML Document Components</h3>
+                    <li><h4>Document Type Declaration (DOCTYPE)</h4></li>
+                        <ul>
+                        <li>HTML 4.01</li>
+                        <li>XHTML 1.0 DOCTYPEs</li>
+                        <li>HTML 5 DOCTYPE</li>
+                        </ul>
+                    <li><h4>Elements (HTML 4.01, XHTML 1.0, HTML 5)</h4></li>
+                        <ul>
+                        <li>Tags</li>
+                        <li>Content - Content Models and Void Elements</li>
+                        <li>Attributes and Attribute Values - Global Attributes, Custom Non-Visible Data Attributes, WAI-ARIA Attributes, Element-specific Attributes.</li>
+                        <li>MathML and SVG - also known as 'Mathematical Markup Language' and 'Scalable Vector Grpahics'; it is a standard on how you will specify mathematical operations.</li>
+                        </ul>
+                <h3>Comments</h3>
+                    <ul>
+                    <li>This will not be rendered on a page.</li>
+                    </ul>
+                </ul>
+        </div>
+    </div>
+    
+	
+	
+</body>
+
+</html>

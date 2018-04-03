@@ -1,0 +1,23 @@
+95986a1 (HEAD -> master, origin/master, origin/HEAD) edited width on table
+b7831f3 Fixed tags
+40ebb2c final css for table
+7610cd6 2:33pm
+5c24316 added css for table
+8eef05a 1:05pm 02-26
+e94d953 Merge branch 'master' of https://github.com/2165522/webtechproject
+f04c4f6 Added contents
+929f613 Added table for protocols
+d306bae Commit 9:55am 02-26
+aca9c04 Commit 9:47am 02-26
+daa98ba added <strong> tag on some parts
+44f6415 made minor adjustments to .cont2
+14a3ddf Added cont2 and cont3 class
+486f974 Added more contents
+d3f3a73 Added content
+8a87bfd Improved NavBar
+52cab57 Updated style.css
+86a29c9 added vertical nav on index.html
+861b466 Added picture of sir Tim Berners Lee in refs file
+6d2417a already added the notes in index.html but still incomplete
+f5388cf Edited index.html
+1530e16 revised html

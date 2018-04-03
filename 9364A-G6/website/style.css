@@ -1,0 +1,223 @@
+body{
+    margin:0;
+    padding: 0;
+	height: 100%;
+    background-color: #ccc;
+}
+
+header {
+    background-color: #52658F;
+    height: 120px;
+    padding-left: 30px;
+}
+
+.main_cont{
+	width: 85%;
+    float: right;
+    margin: -20px;
+    background-color: #f7f5e6;
+    padding-left: 20px;
+    padding-top: 20px;
+    line-height: 30px;
+    
+}
+
+.cont1{
+    height: 500px;
+}
+
+.cont1_l{
+    width: 50%;
+    float: left;
+}
+.cont1_r{
+    font-family: Grotesk;
+    width: 50%;
+    height: 500px;
+    float: left;
+    right: 0;
+    padding-top: 100px;
+    
+}
+
+.cont1_r p{
+    text-align: center;
+}
+
+
+.cont2{
+    display: block;
+}
+
+/*NAV*/
+
+nav {
+    position: sticky;
+    top: 0;
+    float: inherit;
+    z-index: 100;
+}
+
+.horizontal ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333A56;
+    font-family: Grotesk Thin;
+}
+
+.horizontal ul li {
+    float: left;
+    list-style-type: none;
+}
+
+.horizontal li a {
+    font-size: 15px;
+    font-size: calc(12px + 0.7vw);
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.horizontal li a:visited{
+    
+}
+
+.horizontal li a:hover {
+    background-color: #111;
+}
+
+.vertical ul {
+    font-family: Grotesk;
+    list-style-type: none;
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: 15%;
+    height: 100%;
+    overflow: auto;
+}
+
+.vertical ul li {
+    list-style-type: none;
+}
+
+.vertical li a {
+    font-size: 15px;
+    font-size: calc(12px + 0.5vw);
+    display: block;
+    color: #333A56;
+    padding: 10px 12px;
+    text-decoration: none;
+}
+
+.horizontal li a:hover {
+    background-color: #111;
+}
+
+.vertical li a:hover {
+    background-color: #333A56;
+    color: white;
+}
+
+.vertical ul.active {
+    background-color: #4CAF50; /* Add a green color to the "active/current" link */
+    color: white;
+}
+
+/*IMG*/
+
+.stb{
+    margin-top: 20px;
+    display: block; /*for the img inside your div */  
+    margin-left: auto; 
+    margin-right: auto;
+}
+/*TXT*/
+
+.main_cont h2{
+    font-family: London;
+    font-size: 30px;
+}
+
+.main_cont h3{
+    font-family: London;
+    font-size: 25px;
+    
+}
+
+.main_cont h4{
+    font-family: London;
+    font-size: 20px;
+}
+
+.main_cont ul{
+    font-family: Abeat;
+}
+
+li h4 {
+    margin: 0;
+}
+
+dd{
+    font-family: Abeat;
+    font-size: 19px;
+}
+
+h1{
+    display: block;
+    font-family: Grotesk;
+    font-weight: 100;
+    color: white;
+    position: relative;
+    float: left;
+}
+
+.h11{
+    font-family: Grotesk thin;
+    font-size: 25px;
+}
+
+@font-face {
+    font-family: Grotesk;
+    src: url("fonts/TYPO GROTESK DEMO.OTF");
+}
+
+@font-face {
+    font-family: Grotesk Thin;
+    src: url("fonts/TYPO GROTESK THIN DEMO.OTF");
+}
+
+@font-face {
+    font-family: Abeat;
+    src: url("fonts/ABEAKRG.TTF");
+}
+
+@font-face {
+    font-family: London;
+    src: url("fonts/LondonBetween.TTF");
+}
+
+
+
+/*TABLE*/
+table{
+    table-layout: fixed;
+    width: 200px;
+}
+
+th{
+	width:50px;	
+}
+td {
+    width: 110px;
+}
+      tr:nth-of-type(odd) {
+      background-color:#ccc;
+    }
+tr:nth-of-type(even) {
+      background-color:gray;
+    }
+
