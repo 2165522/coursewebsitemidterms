@@ -1,4 +1,4 @@
-CASCADING STYLE SHEETS
+﻿CASCADING STYLE SHEETS
     - language used to specify the presentation (e.g. layout, formatting, fonts, colors, etc.) of
         structurally marked up documents (e.g. HTML)
     - developed by Håkon Wium Lie & Bert Bos
@@ -11,3 +11,18 @@ CASCADING STYLE SHEETS
             - modular approach to CSS development (as opposed to the monolithic specification of CSS 2.1)
     
     HTML STYLE SHEETS
+	- sources of styles for HTML documents
+		- author styles
+            - external (a.k.a linked) stylesheets (recommended)
+            - embedded (a.k.a internal) stylesheets
+            - inline styles
+        - user styles
+            - some browser provide (non-standard) alternatives through plugins/extensions
+                (e.g. stylish)
+        - user agent styles
+            - sample default user agent stylesheet from CSS 2.1
+    
+    - the source of a style denotes its origin, which is used in determining its precedence
+        in the cascade
+    
+    CSS STATEMENTS
