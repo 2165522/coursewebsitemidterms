@@ -12,49 +12,37 @@ header {
 }
 
 .main_cont{
-	width: 85%;
+    margin-right: 5px;
+	width: 83%;
     float: right;
-    margin: -20px;
-    background-color: #f7f5e6;
-    padding-left: 20px;
-    padding-top: 20px;
     line-height: 30px;
     
 }
 
-.cont1{
-    height: 500px;
+.cont{
+    display: none;
+    padding-left: 50px;
+    padding-right: 50px;
 }
-
-.cont1_l{
-    width: 50%;
-    float: left;
-}
-.cont1_r{
-    font-family: Grotesk;
-    width: 50%;
-    height: 500px;
-    float: left;
-    right: 0;
-    padding-top: 100px;
-    
-}
-
-.cont1_r p{
-    text-align: center;
-}
-
 
 .cont2{
-    display: block;
+    margin: auto;
+    display:none;
 }
 
-/*NAV*/
+.cont3{
+    display:none;
+}
 
+
+/*NAV*/
+div.navigation{
+    width: 15%;
+    float: left;
+}
 nav {
     position: sticky;
     top: 0;
-    float: inherit;
     z-index: 100;
 }
 
@@ -89,19 +77,41 @@ nav {
     background-color: #111;
 }
 
-.vertical ul {
+div.link{
     font-family: Grotesk;
-    list-style-type: none;
-    float: left;
-    margin: 0;
+    display: block;
     padding: 0;
-    width: 15%;
-    height: 100%;
+    width: 100%;
+    height: 35px;
+    line-height: 40px;
     overflow: auto;
+    text-align: center;
+    border-radius: 10px;
+    margin: 5px;
+    background-color: #f7f5e6;
 }
+
+div.link a {
+    font-size: 15px;
+    font-size: calc(17px + 0.5vw);
+    color: #333A56;
+    text-decoration: none;
+}
+
 
 .vertical ul li {
     list-style-type: none;
+}
+
+.vertical ul {
+    font-family: Grotesk;
+    list-style-type: none;
+    display: block;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: auto;
+    text-align: center;
 }
 
 .vertical li a {
@@ -118,13 +128,11 @@ nav {
 }
 
 .vertical li a:hover {
-    background-color: #333A56;
     color: white;
 }
 
-.vertical ul.active {
-    background-color: #4CAF50; /* Add a green color to the "active/current" link */
-    color: white;
+.vertical li a:active {
+    color:aqua;
 }
 
 /*IMG*/
