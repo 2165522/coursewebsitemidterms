@@ -1,28 +1,148 @@
-﻿CASCADING STYLE SHEETS
-    - language used to specify the presentation (e.g. layout, formatting, fonts, colors, etc.) of
-        structurally marked up documents (e.g. HTML)
-    - developed by Håkon Wium Lie & Bert Bos
-    
-    VERSION HISTORY:
-        - CSS Level 1 (CSS1, W3C Recommendation, Dec 1996)
-        - CSS Level 2 (CSS2, W3C Recommendation, May 1998)
-        - CSS Level 2 Revision 1 (CSS 2.1, W3C Recommendation, June 2011)
-        - CSS Level 3
-            - modular approach to CSS development (as opposed to the monolithic specification of CSS 2.1)
-    
-    HTML STYLE SHEETS
-	- sources of styles for HTML documents
-		- author styles
-            - external (a.k.a linked) stylesheets (recommended)
-            - embedded (a.k.a internal) stylesheets
-            - inline styles
-        - user styles
-            - some browser provide (non-standard) alternatives through plugins/extensions
-                (e.g. stylish)
-        - user agent styles
-            - sample default user agent stylesheet from CSS 2.1
-    
-    - the source of a style denotes its origin, which is used in determining its precedence
-        in the cascade
-    
-    CSS STATEMENTS
+CSS SELECTOR 
+ selector
+	- structure used as a condition in a CSS rule to determin which elements in the document tree are mathced by the selector and are thus targeted by the formatting specified in the CSS rule declaration block
+ selector syntax:
+	- chain of one or more sequences of simple selectors separated by combinations with one pseudo element possibly appended to the last sequence
+	sequence of simple selectors 
+	- chain of simple selectors not separated by combinators
+	- simple selector-universal (*)
+	- ID selectors-global (#)
+	- class selectors-any normal class (.)
+	- attribute selectors ([])
+ Pseudo Combinators - provide additional condition
+  combinators
+	- descendant combinator (whitespace, i.e, Space, Tab, linefeed, carriage return, form)
+		- child combinator (>)
+		- sibling combinators
+			= adjacent sibling combinator (+)
+			= general sibling combinator (~)
+ Pseudo classes - structural pseudo classes
+  	: root
+  	: first-child, :last-child, :only-child
+
+
+ Pseudo elements
+	first-letter :: first letter
+	:first-line :: first-line
+	:before :: before
+	:after :: after
+ Selector group - comma - separated list of selectors representing the union of all elements selected by each of the selectors in the list ex. h1, h2, h3
+
+Pseudo-classes
+ 	- dynamic pseudo classes
+		= link pseudo-class
+			> :link, :visited
+	- user action pseudo classes
+		> :hover, :active, :focus
+	- target pseudo-class
+		> :target
+	- language pseudo-class
+		> :lang()
+	- UI element states pseudo-classes
+		> :enabled
+	- structural pseudo-class
+		> :root, :first-child, etc
+	- negation pseudo-class
+		> :not()
+
+Combinators
+	- descendant combinator
+		(whitespace, i., space tab, line ***, carriage, return, form feed)
+	- child combinator (>)
+
+ CSS Rule Precedence
+	- an HTML element may be the subject of the selectors of multiple style rules
+		- when such rules target different properties, their effects cascade (i.e, are combined)
+		- when the styles involve
+ 
+ CSS Declaratives
+	- properties
+		= short-hand properties
+			> allows authors to specify the values of several properties with a single property
+			> e.g background,____, margin, padding, border, border-left, border-right, etc.
+		= vendor specific extensions (aka, vendor prefixes)
+			> used by browser vendors as a prefix for the names of experimental or non-standard CSS properties; lately, vendors are moving away from vendor prefixes in favor of use-controlled flags or preferences.
+			> e.g -webkit-, -moz-, -o-, -ms-, etc.
+		= custom properties, aka, CSS variables experimental
+			> properties names prefixed with [--], representing a value that can be reused throughout the document using the var() function
+	- values
+		= value processing
+		= value-types
+			> keywords
+				=> CSS-wide keywords
+					# initial, inherit, unset
+				=> property specific keywords
+			> numbers
+				=> integers ________ in (scientific) decimal _____
+			> dimensions
+				=> length, angle, duration(___), frrequency, resolution
+				=> lenght units
+					# font-relative : ex, ch, rem
+					# viewpoint - percentage :VW, :VH, vi, vmax
+					# absolute: cm, in, pt, pc, px
+			> angle-units:
+				=> deg, grad, rad, 
+				=> used in some gradiant
+			> precentages
+				=> number with a % suffix
+				=> used in some gradiant
+			> URLs and URIs
+				=> url() function with an absolute or relative (to the stlesheet) URL parameter
+				=> denotes a pointer to a resource, such as _____ of a font/
+			> Colors
+				=> color keywords: red
+				=> RGB hexadecinal notatio: 
+					HER #ff0000, #ff000000, #ff00
+					RGB rgb(255,0,0), rgb(0%, 100%, 50%), rgb(100%, 0%, 50%)
+  					HSL hsl (100%, 0%, 50%)
+
+
+CSS PREPROCESSORS, FRAMEWORKS, AND POLYFILLS	
+	CSS Preprocessors
+		- generates CSS using a custom language syntax that typically inclued features that don't exist in pure CSS (eg. variables, control-flow, nesting, ____, mixing, inline imports)
+		- e.g ____, lesss, Stylues, etc.
+
+	CSS Frameworks 
+		- provides predefines CSS design functionality that can reused, extended, or customized.
+		- e.g Bootstrap, Foundation, Materialize, etc.
+
+	Polyfills
+		- provides-features that devwlopers expect browsers to provide natively
+		- e.g Modernizer, selectivi??, etc.
+
+
+Javascript
+
+Javascript Execution Environment
+	- Core Javascript (ecmaScript) Language and API
+	- (Traditional) Browser Object Model (BOM) API (non-standard)
+		= Window, Navigator, Screen, Location, History
+	- Document Object Model (DOM) API
+		= Node, Document, Element, Text, ____, Document type, ____, etc.
+		= Event, EventTarget, EventListener, etc.
+		= CSSStylesheet, CSSRule, etc.
+	-Miscellaneous Javascript Web APIs
+		= geolocation, _____, Local storage, push notification, service workers, web sockets, web workers, XML HTTP request, (AJAX) etc.
+
+Document Object Model (DOM)
+	- API that allows access to the HTML document from within scripts associated with the web page
+		= a parsed HTML document is represented by a DOM tree, which contains nodes representing elements, elements attributes, textual content, and other HTML document components (e.g Doctype, comments)
+	- accessed via the Document object property of the global window object
+
+
+functionalities:
+	- retrieve references to nodes ( node collections) in the DOM
+		= getElementByID()
+		= getElementByTagName(), ... classes(), ...Name()
+		= querySelector(), querySelectorAll()
+	- construct/copy nodes
+		= createElement(), createTextNode(), createTextNode() etc
+		= ________, _______
+	- miscellaneous attributes and methods
+		= nodeType, nodeName
+		= attributes, id, tagName, className, classList
+		= ownerDocument, documentElement, ___ChildNodes()
+		= normalize()
+	- manipulate the DOM tree
+		= appendChild(), insertBefore(), replaceChild(), removeChild()
+		= adoptChild()
