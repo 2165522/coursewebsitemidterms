@@ -1,54 +1,82 @@
-CSS SELECTOR 
- selector
-	- structure used as a condition in a CSS rule to determin which elements in the document tree are mathced by the selector and are thus targeted by the formatting specified in the CSS rule declaration block
- selector syntax:
-	- chain of one or more sequences of simple selectors separated by combinations with one pseudo element possibly appended to the last sequence
-	sequence of simple selectors 
-	- chain of simple selectors not separated by combinators
-	- simple selector-universal (*)
-	- ID selectors-global (#)
-	- class selectors-any normal class (.)
-	- attribute selectors ([])
- Pseudo Combinators - provide additional condition
-  combinators
-	- descendant combinator (whitespace, i.e, Space, Tab, linefeed, carriage return, form)
-		- child combinator (>)
-		- sibling combinators
-			= adjacent sibling combinator (+)
-			= general sibling combinator (~)
- Pseudo classes - structural pseudo classes
-  	: root
-  	: first-child, :last-child, :only-child
+CASCADING STYLE SHEETS
+    - language used to specify the presentation (e.g. layout, formatting, fonts, colors, etc.) of
+        structurally marked up documents (e.g. HTML)
+    - developed by Håkon Wium Lie & Bert Bos
+    
+    VERSION HISTORY:
+        - CSS Level 1 (CSS1, W3C Recommendation, Dec 1996)
+        - CSS Level 2 (CSS2, W3C Recommendation, May 1998)
+        - CSS Level 2 Revision 1 (CSS 2.1, W3C Recommendation, June 2011)
+        - CSS Level 3
+            - modular approach to CSS development (as opposed to the monolithic specification of CSS 2.1)
+    
+    HTML STYLE SHEETS
+	- sources of styles for HTML documents
+		- author styles
+            - external (a.k.a linked) stylesheets (recommended)
+            - embedded (a.k.a internal) stylesheets
+            - inline styles
+        - user styles
+            - some browser provide (non-standard) alternatives through plugins/extensions
+                (e.g. stylish)
+        - user agent styles
+            - sample default user agent stylesheet from CSS 2.1
+    
+    - the source of a style denotes its origin, which is used in determining its precedence
+        in the cascade
+    
+    CSS STATEMENTS
+	   CSS SELECTOR 
+        selector
+            - structure used as a condition in a CSS rule to determin which elements in the document tree are mathced by the selector and are thus targeted by the formatting specified in the CSS rule declaration block
+        
+        selector syntax:
+	       - chain of one or more sequences of simple selectors separated by combinations with one pseudo element possibly appended to the last sequence
+	   
+        sequence of simple selectors 
+            - chain of simple selectors not separated by combinators
+            - simple selector-universal (*)
+            - ID selectors-global (#)
+            - class selectors-any normal class (.)
+            - attribute selectors ([])
+        
+        Pseudo Combinators - provide additional condition
+        Combinators
+	           - descendant combinator (whitespace, i.e, Space, Tab, linefeed, carriage return, form)
+                    - child combinator (>)
+                    - sibling combinators
+                        - adjacent sibling combinator (+)
+                        - general sibling combinator (~)
+ 
+        Pseudo classes - structural pseudo classes
+            :root
+            :first-child, :last-child, :only-child
 
 
- Pseudo elements
-	first-letter :: first letter
-	:first-line :: first-line
-	:before :: before
-	:after :: after
- Selector group - comma - separated list of selectors representing the union of all elements selected by each of the selectors in the list ex. h1, h2, h3
+        Pseudo elements
+            first-letter :: first letter
+            :first-line :: first-line
+            :before :: before
+            :after :: after
 
-Pseudo-classes
- 	- dynamic pseudo classes
-		= link pseudo-class
-			> :link, :visited
-	- user action pseudo classes
-		> :hover, :active, :focus
-	- target pseudo-class
-		> :target
-	- language pseudo-class
-		> :lang()
-	- UI element states pseudo-classes
-		> :enabled
-	- structural pseudo-class
-		> :root, :first-child, etc
-	- negation pseudo-class
-		> :not()
+        Selector group - comma - separated list of selectors representing the union of all elements selected by each of the selectors in the list ex. h1, h2, h3
 
-Combinators
-	- descendant combinator
-		(whitespace, i., space tab, line ***, carriage, return, form feed)
-	- child combinator (>)
+        Pseudo-classes
+            - dynamic pseudo classes
+                = link pseudo-class
+                    > :link, :visited
+            - user action pseudo classes
+                > :hover, :active, :focus
+            - target pseudo-class
+                > :target
+            - language pseudo-class
+                > :lang()
+            - UI element states pseudo-classes
+                > :enabled
+            - structural pseudo-class
+                > :root, :first-child, etc
+            - negation pseudo-class
+                > :not()
 
  CSS Rule Precedence
 	- an HTML element may be the subject of the selectors of multiple style rules
