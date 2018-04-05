@@ -174,3 +174,10 @@ functionalities:
 	- manipulate the DOM tree
 		= appendChild(), insertBefore(), replaceChild(), removeChild()
 		= adoptChild()
+	- 
+	- traverse the DOM tree (from a given node)
+		= parentNode, parentElement
+		= childNodes, children
+		= firstChild, lastChild, nextSibling, previousSibling
+		= firstElementChild, lastElementChild, nextElementSibling
+		= previousElementSibling
