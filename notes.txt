@@ -146,11 +146,11 @@ Javascript Execution Environment
 	- (Traditional) Browser Object Model (BOM) API (non-standard)
 		= Window, Navigator, Screen, Location, History
 	- Document Object Model (DOM) API
-		= Node, Document, Element, Text, ____, Document type, ____, etc.
+		= Node, Document, Element, Text, Attr, Document type, ____, etc.
 		= Event, EventTarget, EventListener, etc.
 		= CSSStylesheet, CSSRule, etc.
 	-Miscellaneous Javascript Web APIs
-		= geolocation, _____, Local storage, push notification, service workers, web sockets, web workers, XML HTTP request, (AJAX) etc.
+		= geolocation, IndexedDB, Local storage, push notification, service workers, web sockets, web workers, XML HTTP request, (AJAX) etc.
 
 Document Object Model (DOM)
 	- API that allows access to the HTML document from within scripts associated with the web page
@@ -165,11 +165,11 @@ functionalities:
 		= querySelector(), querySelectorAll()
 	- construct/copy nodes
 		= createElement(), createTextNode(), createTextNode() etc
-		= ________, _______
+		= cloneNode(), importNode()
 	- miscellaneous attributes and methods
 		= nodeType, nodeName
 		= attributes, id, tagName, className, classList
-		= ownerDocument, documentElement, ___ChildNodes()
+		= ownerDocument, documentElement, hasChildNodes()
 		= normalize()
 	- manipulate the DOM tree
 		= appendChild(), insertBefore(), replaceChild(), removeChild()
