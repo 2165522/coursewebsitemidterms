@@ -1,0 +1,106 @@
+div .jumbotron {
+  background: url("../img/cover2.jpg") no-repeat;
+  background-size: cover;
+  background-position: 0 60%; }
+
+.navbar {
+  z-index: 100;
+  width: 100%;
+  background-color: none !important; }
+  @media (max-width: 34em) {
+    .navbar {
+      background-color: #2C3531 !important; } }
+  .navbar .navbar-toggler {
+    cursor: pointer;
+    outline: 0; }
+  .navbar .nav-link {
+    font-weight: bold; }
+  .navbar .nav-item {
+    padding: 0 1rem; }
+    @media (max-width: 34em) {
+      .navbar .nav-item {
+        padding: 0; } }
+    @media (max-width: 34em) {
+      .navbar .nav-item .nav-link {
+        color: #D1E8E2 !important;
+        background-color: #2C3531 !important;
+        z-index: 2000; } }
+
+.navbar ul li a, .navbar-collapse ul li a {
+  text-align: center; }
+
+.heading1-img {
+  width: 60%; }
+
+.dropdown-menu {
+  background-color: #2C3531 !important; }
+  .dropdown-menu .dropdown-divider {
+    background-color: #D1E8E2 !important; }
+
+.contents h1 {
+  font-size: calc(22px + 1vh); }
+
+.contents li {
+  font-size: calc(17px + 0.8vh); }
+
+div.link {
+  position: sticky;
+  display: block;
+  padding: 0;
+  width: 100%;
+  height: 8.5vh;
+  line-height: 8.5vh;
+  top: 8vh;
+  float: inherit;
+  overflow: auto;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border-bottom: 1px black solid;
+  background-color: #D1E8E2; }
+  div.link h1 {
+    height: 7vh;
+    line-height: 7vh; }
+
+.bg-primary {
+  background-color: #D1E8E2 !important; }
+
+.bg-inverse {
+  background-color: #2C3531 !important; }
+
+.jumbotron {
+  background-color: transparent !important;
+  border-radius: 0 !important; }
+
+.text-content-primary {
+  color: #2C3531; }
+
+.navbar {
+  height: 8vh; }
+
+.dropdown-item {
+  color: #D1E8E2; }
+
+.anchor {
+  display: block;
+  height: 8vh;
+  /*same height as header*/
+  margin-top: 8vh;
+  /*same height as header*/
+  visibility: hidden; }
+
+table {
+  table-layout: fixed;
+  width: 200px; }
+
+th {
+  width: 50px; }
+
+td {
+  width: 110px; }
+
+tr:nth-of-type(odd) {
+  background-color: #ccc; }
+
+tr:nth-of-type(even) {
+  background-color: gray; }
