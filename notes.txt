@@ -12,12 +12,12 @@ CASCADING STYLE SHEETS
     
     HTML STYLE SHEETS
 	- sources of styles for HTML documents
-		- author styles
+	    - author styles
             - external (a.k.a linked) stylesheets (recommended)
             - embedded (a.k.a internal) stylesheets
             - inline styles
         - user styles
-            - some browser provide (non-standard) alternatives through plugins/extensions
+            - some browser provides (non-standard) alternatives through plugins/extensions
                 (e.g. stylish)
         - user agent styles
             - sample default user agent stylesheet from CSS 2.1
@@ -28,10 +28,12 @@ CASCADING STYLE SHEETS
     CSS STATEMENTS
 	   CSS SELECTOR 
         selector
-            - structure used as a condition in a CSS rule to determin which elements in the document tree are mathced by the selector and are thus targeted by the formatting specified in the CSS rule declaration block
+            - structure used as a condition in a CSS rule to determine which elements in the document tree are 
+		matched by the selector and are thus targeted by the formatting specified in the CSS rule declaration block
         
         selector syntax:
-	       - chain of one or more sequences of simple selectors separated by combinations with one pseudo element possibly appended to the last sequence
+	       - chain of one or more sequences of simple selectors separated by combinations with one pseudo 
+		element possibly appended to the last sequence
 	   
         sequence of simple selectors 
             - chain of simple selectors not separated by combinators
@@ -59,7 +61,7 @@ CASCADING STYLE SHEETS
             :before :: before
             :after :: after
 
-        Selector group - comma - separated list of selectors representing the union of all elements selected by each of the selectors in the list ex. h1, h2, h3
+        Selector group - comma-separated list of selectors representing the union of all elements selected by each of the selectors in the list ex. h1, h2, h3
 
         Pseudo-classes
             - dynamic pseudo classes
@@ -81,13 +83,18 @@ CASCADING STYLE SHEETS
  CSS Rule Precedence
 	- an HTML element may be the subject of the selectors of multiple style rules
 		- when such rules target different properties, their effects cascade (i.e, are combined)
-		- when the styles involve
+		- when the styles involve the same property, they conflict, and must be resolved such that only one style is
+			applied
+		- resolution:
+			- by origin and importance
+			- by specificity
+			- by order
  
- CSS Declaratives
+ CSS Declarations
 	- properties
 		= short-hand properties
 			> allows authors to specify the values of several properties with a single property
-			> e.g background,____, margin, padding, border, border-left, border-right, etc.
+			> e.g background,font, margin, padding, border, border-left, border-right, etc.
 		= vendor specific extensions (aka, vendor prefixes)
 			> used by browser vendors as a prefix for the names of experimental or non-standard CSS properties; lately, vendors are moving away from vendor prefixes in favor of use-controlled flags or preferences.
 			> e.g -webkit-, -moz-, -o-, -ms-, etc.
@@ -101,9 +108,9 @@ CASCADING STYLE SHEETS
 					# initial, inherit, unset
 				=> property specific keywords
 			> numbers
-				=> integers ________ in (scientific) decimal _____
+				=> integers or reals in (scientific) decimal notation
 			> dimensions
-				=> length, angle, duration(___), frrequency, resolution
+				=> length, angle, duration(or time), frrequency, resolution
 				=> lenght units
 					# font-relative : ex, ch, rem
 					# viewpoint - percentage :VW, :VH, vi, vmax
@@ -127,16 +134,16 @@ CASCADING STYLE SHEETS
 
 CSS PREPROCESSORS, FRAMEWORKS, AND POLYFILLS	
 	CSS Preprocessors
-		- generates CSS using a custom language syntax that typically inclued features that don't exist in pure CSS (eg. variables, control-flow, nesting, ____, mixing, inline imports)
-		- e.g ____, lesss, Stylues, etc.
+		- generates CSS using a custom language syntax that typically inclued features that don't exist in pure CSS (eg. variables, control-flow, nesting, mixins, functions, etc)
+		- e.g sass, lesss, Stylues, etc.
 
 	CSS Frameworks 
-		- provides predefines CSS design functionality that can reused, extended, or customized.
+		- provides predefined CSS design functionality that can be reused, extended, or customized.
 		- e.g Bootstrap, Foundation, Materialize, etc.
 
 	Polyfills
-		- provides-features that devwlopers expect browsers to provide natively
-		- e.g Modernizer, selectivi??, etc.
+		- provides features that developers expect browsers to provide natively
+		- e.g Modernizr, selectivizr, etc.
 
 
 Javascript
