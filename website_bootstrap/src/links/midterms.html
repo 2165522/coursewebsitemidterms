@@ -5,20 +5,21 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+        <link href='https://fonts.googleapis.com/css?family=Hind' rel='stylesheet'>
         <link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="../css/bootstrap.css">
         <link rel="stylesheet" href="../css/style.css">
 
     </head>
 
-    <body class="bg-primary">
+    <body>
         <script type="text/javascript" src="js/script.js"></script>
         <script src="js/jquery.min.js"></script>
         <script src="js/tether.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
 
-        <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse sticky-top">
-            <a href="../index.html" class="navbar-brand text-primary" id="logo">WEBTEK 2018</a>
+        <nav class="navbar navbar-toggleable-md navbar-inverse bg-primary sticky-top">
+            <a href="../index.html" class="navbar-brand font-weight-bold logo-color" id="logo">WEBTEK 2018</a>
 
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
                 <span class="navbar-toggler-icon"></span>
@@ -26,25 +27,17 @@
 
             <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                 <ul class="navbar-nav">
-                    <li class="nav-item active dropdown">
+                    <li class="nav-item">
                         <a class="nav-link text-primary text-uppercase" href="../index.html">Home</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link text-primary text-uppercase" href="#" data-toggle="dropdown" data-target="dropdown-target">Prelims</a>
-                        <div class="dropdown-menu body-bg text-primary" aria-labelledby="dropdown_target">
-                            <a class="dropdown-item" href="#www">WWW</a>
-                            <a class="dropdown-item" href="#http">HTTP</a>
-                        </div>
+                    <li class="nav-item">
+                        <a class="nav-link text-primary text-uppercase" href="../links/prelims.html">Prelims</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link text-primary text-uppercase" href="#" data-toggle="dropdown" data-target="dropdown-target">Midterms</a>
-                        <div class="dropdown-menu body-bg text-primary" aria-labelledby="dropdown_target">
-                            <a class="dropdown-item" href="#css">CSS</a>
-                            <a class="dropdown-item" href="#javascript">JavaScript</a>
-                        </div>
+                    <li class="nav-item">
+                        <a class="nav-link text-primary text-uppercase" href="../links/midterms.html" id="active">Midterms</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link text-primary text-uppercase" href="#" data-toggle="dropdown" data-target="dropdown-target">Finals</a>
+                    <li class="nav-item">
+                        <a class="nav-link text-primary text-uppercase" href="#">Finals</a>
                     </li>
                 </ul>
             </div>
@@ -59,75 +52,56 @@
                         <h1>Cascading Style Sheets</h1>
                     </div>
                     <div class="cont">
-                        <!-- INSERT CSS CONTENTS HERE -->
-                        <h2>Cascading Style Sheet (CSS)</h2>
                         <ul>
-                            <li>language used to specify the presentation (e.g. layout, formatting, fonts, colors, etc.) of
-                            structurally marked up documents (e.g. HTML)</li>
+                            <li>language used to specify the presentation <span class="font-italic">(e.g. layout, formatting, fonts, colors, etc.)</span> of structurally marked up documents <span class="font-italic">(e.g. HTML)</span></li>
                             <li>developed by Håkon Wium Lie and Bert Bos</li>
                         </ul>
                         <h3>Version History</h3>
                         <ul>
-                            <li>CSS Level 1 (CSS1, W3C Recommendation, Dec 1996)</li>
-                            <li>CSS Level 2 (CSS2, W3C Recommendation, May 1998)</li>
-                            <li>CSS Level 2 Revision 1 (CSS 2.1, W3C Recommendation, June 2011)</li>
-                            <li>CSS Level 3</li>
+                            <li>CSS Level 1 <span class="font-italic"><a href="https://www.w3.org/TR/CSS1/">(CSS1, W3C Recommendation, Dec 1996)</a></span></li>
+                            <li>CSS Level 2 <span class="font-italic"><a href="https://www.w3.org/TR/1998/REC-CSS2-19980512/">(CSS2, W3C Recommendation, May 1998)</a></span></li>
+                            <li>CSS Level 2 Revision 1 <span class="font-italic"><a href="https://www.w3.org/TR/CSS2/">(CSS 2.1, W3C Recommendation, June 2011)</a></span></li>
+                            <li>CSS Level 3 <span class="font-italic"><a href="https://www.w3.org/TR/2001/WD-css3-roadmap-20010523/">(CSS3, W3C Recommendation, May 2001)</a></span></li>
                             <ul>
                                 <li>modular approach to CSS development (as opposed to the monolithic specification of CSS 2.1)</li>
                             </ul>
                         </ul>
                         <h3>HTML Style Sheets</h3>
                         <ul>
-                           
+                            <li>the source of a style denotes its origin, which is used in determining its precedence
+                                in the cascade</li>
                             <li>sources of styles for HTML Documents</li>
                             <ul>
                                 <li>author styles</li>
-                                <li>external (a.k.a linked) stylesheets (recommended)</li>
-                                <li>embedded (a.k.a internal) stylesheets</li>
-                                <li>inline styles</li>
+                                <ul>
+                                    <li>external (linked) stylesheets</li>
+                                    <li>embedded (internal) stylesheets</li>
+                                    <li>inline styles</li>
+                                </ul>
                             </ul>
                             <li>user styles</li>
                             <ul>
                                 <li>some browser provides (non-standard) alternatives through plugins/extensions
-                                (e.g. stylish)</li>
+                                    (e.g. stylish)</li>
                             </ul>
                             <li>user agent styles</li>
                             <ul>
                                 <li>sample default user agent stylesheet from CSS 2.1</li>
                             </ul>
-                            <li>the source of a style denotes its origin, which is used in determining its precedence
-                            in the cascade</li>
                         </ul>
                         <h3>CSS Statements</h3>
-                        <ul>
-                            <li>At-rules</li>
-                            <ul>
-                                <li>@charset</li>
-                                <li>@import</li>
-                                <li>@namespace</li>
-                                <li>@media</li>
-                                <li>@supports</li>
-                                <li>@page</li>
-                                <li>@font-face</li>
-                                <li>@keyframes</li>
-                            </ul>
-                            <li>CSS Rule Sets (a.k.a., CSS Rules, Style Rules) </li>
-                            <ul>
-                                <li>Consists of a selector, followed by a brace-enclosed declaration block, which contains zero or more smi-colon(;) separated properly declaration which in turn consists of a properly name followed by a colon (:) followed by a property value</li>
-                            </ul>
-                        </ul>
                         <h3>CSS Selector</h3>
                         <ul>
                             <li>Selector</li>
                             <ul>
                                 <li>structure used as a condition in a CSS rule to determine which elements in the document tree are 
-		                        matched by the selector and are thus targeted by the formatting specified in the CSS rule declaration block</li>
+                                    matched by the selector and are thus targeted by the formatting specified in the CSS rule declaration block</li>
                                 <li>the matched elements are called the <i>subjects</i> of the selector</li>
                             </ul>
                             <li>Selector Syntax</li>
                             <ul>
                                 <li>chain of one or more sequences of simple selectors separated by combinations with one pseudo 
-		                        element possibly appended to the last sequence</li>
+                                    element possibly appended to the last sequence</li>
                                 <li>sequence of simple selectors</li>
                                 <ul>
                                     <li>chain of simple selectors not separated by combinators</li>
@@ -144,15 +118,6 @@
                                 <li>ID Selectors: navBar {padding-right: 2px;}</li>
                                 <li>Class Selectors: ul.top-ten {list-style: square;}</li>
                                 <li>Attribute Selectors: h1[lang != fr] {font-style: bold;}</li>
-                            </ul>
-                            <li>Selector Group</li>
-                            <ul>
-                                <li>comma-separated list of selectors representing the union of all elements selected by each of the selectors in the list</li>
-                                <li>Example:</li>
-                                <ul>
-                                <li>h1,li,a</li>
-                                <li>:hover, :focus</li>
-                                </ul>
                             </ul>
                         </ul>
                         <h3>Pseudo-Classes</h3>
@@ -181,10 +146,10 @@
                             </ul>
                             <li>UI Element States Pseudo-Classes</li>
                             <ul>
-                                <li>:enabled</li>
-                                <li>:disabled</li>
+                                <li>:enbled</li>
+                                <li>:disabled></li>
                                 <li>:checked</li>
-                                <li>:indeterminate</li>
+                                <li>:indeterminte</li>
                             </ul>
                             <li>Structural Pseudo-Classes</li>
                             <ul>
@@ -202,196 +167,16 @@
                         </ul>
                         <h3>Pseudo Combinators</h3>
                         <ul>
-                        <li>provides additional condition</li>
-                        <li>descendant combinator (whitespace, i.e, space, tab, line feed, carriage return, form</li>
-                        <li>child combinator (>)</li>
-                        <li>sibling combinators</li>
+                            <li>provides additional condition</li>
+                            <li>descendant combinator (whitespace, i.e, space, tab, line feed, carriage return, form</li>
+                            <li>child combinator (>)</li>
+                            <li>sibling combinators</li>
                             <ul>
                                 <li>adjacent sibling combinator (+)</li>
                                 <li>general sibling combinator (~)</li>
                             </ul>
                         </ul>
-                        <h3>Pseudo-Elements</h3>
-                        <ul>
-                            <li>:first-letter, ::first-letter</li>
-                            <li>:first-line, ::first-line</li>
-                            <li>:before, ::before</li>
-                            <li>:after, ::after</li>
-                        </ul>
-                        <h3>CSS Rule Precedence</h3>
-                        <ul>
-                            <li>an HTML element may be the subject of the selectors of multiple style rules</li>
-                            <ul>
-                                <li>when such rules target different properties, their effects cascade (i.e, are combined)</li>
-                                <li>when the styles involve the same property, they conflict, and must be resolved such that only one style is applied</li>
-                                <li>resolution:</li>
-                                <ul>
-                                    <li>by origin and importance</li>
-                                    <li>by specificity</li>
-                                    <li>by order</li>
-                                </ul>
-                            </ul>
-                        </ul>
-                        <h3>CSS Declarations</h3>
-                        <ul>
-                            <li>properties:</li>
-                            <ul>
-                                <li>short-hand properties</li>
-                                <ul>
-                                    <li>allows authors to specify the values of several properties with a single property</li>
-                                    <li>Examples:</li>
-                                    <ul>
-                                        <li>background</li>
-                                        <li>font</li>
-                                        <li>margin</li>
-                                        <li>padding</li>
-                                        <li>border</li>
-                                        <li>border-left</li>
-                                        <li>border-width</li>
-                                    </ul>
-                                </ul>
-                                <li>Vendor Specific Extensions (a.k.a., Vendor Prefixes)</li>
-                                <ul>
-                                    <li>used by browser vendors as a <i>prefix</i> for the names of <i>experimnetal</i> or <i>non-standard</i> CSS properties; lately, vendors are moving away from vendor prefixes in favor of use-controlled flags or preferences</li>
-                                    <li>Example:</li>
-                                    <ul>
-                                        <li>-webkit-</li>
-                                        <li>-moz-</li>
-                                        <li>-o-</li>
-                                        <li>-ms-</li>
-                                    </ul>
-                                </ul>
-                                <li>Custom Properties (a.k.a, CSS Variables (experimental))</li>
-                                <ul>
-                                    <li>properly names prefixed with --, representing a value that can be reused throughout the document using the var() function</li>
-                                </ul>
-                            </ul>
-                            <li>values</li>
-                            <ul>
-                                <li>value processing</li>
-                                <ul>
-                                    <li><i>declared, cascaded, specified,computed, used, actual</i> values</li>
-                                </ul>
-                                <li>value types</li>
-                                <ul>
-                                    <li>keywords</li>
-                                    <ul>
-                                        <li>CSS-wide Keywords</li>
-                                        <ul>
-                                            <li>initial, inherit, unset</li>
-                                        </ul>
-                                        <li>property-specific keywords</li>
-                                    </ul>
-                                    <li>numbers</li>
-                                    <ul>
-                                        <li>integers or reals in decimal notation</li>
-                                    </ul>
-                                    <li>dimensions</li>
-                                    <ul>
-                                        <li>length, angle, duration, frequency, resolution</li>
-                                        <li>length units:</li>
-                                        <ul>
-                                            <li>font-relative: em, ex, ch, ren</li>
-                                            <li>viewport-percentage: vw, vh, vmin, vmax</li>
-                                            <li>absolute: cm, mm, in, pt, pc, px</li>
-                                        </ul>
-                                        <li>angle units:</li>
-                                        <ul>
-                                            <li>deg, grad, rad, turn</li>
-                                            <li>used in some <i>gradient</i> and <i>transform </i>functions</li>
-                                        </ul>
-                                        <li>duration (or time) units:</li>
-                                        <ul>
-                                            <li>s, ms</li>
-                                            <li>used in <i>animation, transition</i> and related properties</li>
-                                        </ul>
-                                        <li>frequency units:</li>
-                                        <ul>
-                                            <li>Hz, kHz</li>
-                                            <li>initially introduced in CSS2 for the (obsoleted) <i>aural</i> media type; reintroduced in CSS3, but currently unused</li>
-                                        </ul>
-                                        <li>resolution units:</li>
-                                        <ul>
-                                            <li>dpi, dpcm, dppx</li>
-                                            <li>used in media queries</li>
-                                        </ul>
-                                    </ul>
-                                    <li>percentages</li>
-                                    <ul>
-                                        <li>number with a % suffix</li>
-                                        <li>calculated as a percentage of some value (usually taken from the parent element)</li>
-                                    </ul>
-                                    <li>URLs and URIs</li>
-                                    <ul>
-                                        <li>url() function with an absolute or relative (to the stylesheet) URL parameter</li>
-                                        <li>denotes a pointer to a resource, such as an image or a font</li>
-                                    </ul>
-                                    <li>colors</li>
-                                    <ul>
-                                        <li>color keywords: blue</li>
-                                        <li>RGB hexaadecimal notation:</li>
-                                        <ul>
-                                            <li>#0000FF</li>
-                                            <li>#008080</li>
-                                            <li>#C0C0C0</li>
-                                        </ul>
-                                        <li>RGB functions:</li>
-                                        <ul>
-                                            <li>rgb(0,255,0)</li>
-                                            <li>rgb(0,0,255)</li>
-                                            <li>rgb(255,0,0)</li>
-                                        </ul>
-                                        <li>HSL functions</li>
-                                        <ul>
-                                            <li>hsl(0, 100%, 50%)</li>
-                                            <li>hsl(165, 100%, 50%)</li>
-                                            <li>hsl(87, 43%, 85%)</li>
-                                        </ul>
-                                        <li>currentcolor, transparent</li>
-                                    </ul>
-                                    <li>strings</li>
-                                    <ul>
-                                        <li>delimited by single quotes ( ' ) or double quotes ( " )</li>
-                                    </ul>
-                                    <li>functions</li>
-                                    <li>miscellaneous types</li>
-                                </ul>
-                            </ul>
-                        </ul>
-                        <h3>CSS Prepocessors, Frameworks, and Polyfills</h3>
-                        <ul>
-                            <li>CSS Preprocessors</li>
-                            <ul>
-                                <li>generates CSS using a custom language syntax that typically inclued features that don't exist in pure CSS (eg. variables, control-flow, nesting, mixins, functions, etc)</li>
-                                <li>Example:</li>
-                                <ul>
-                                    <li>Sass</li>
-                                    <li>Less</li>
-                                    <li>Stylus</li>
-                                </ul>
-                            </ul>
-                            <li>CSS Frameworks</li>
-                            <ul>
-                                <li>provides predefined CSS design functionality that can be reused, extended, or customized</li>
-                                <li>Example:</li>
-                                <ul>
-                                    <li>Bootstrap</li>
-                                    <li>Foundation</li>
-                                    <li>Materialize</li>
-                                </ul>
-                            </ul>
-                            <li>Polyfills</li>
-                            <ul>
-                                <li>provides features that developers expect browsers to provide natively</li>
-                                <li>Exaample:</li>
-                                <ul>
-                                    <li>Modernizr</li>
-                                    <li>selectivizr</li>
-                                </ul>
-                            </ul>
-                        </ul>
                     </div>
-                    
                     <span class="anchor" id="javascript"></span>
                     <div class="link">
                         <h1>JavaScript</h1>

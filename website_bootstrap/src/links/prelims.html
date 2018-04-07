@@ -5,20 +5,21 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+        <link href='https://fonts.googleapis.com/css?family=Hind' rel='stylesheet'>
         <link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="../css/bootstrap.css">
         <link rel="stylesheet" href="../css/style.css">
 
     </head>
 
-    <body class="bg-primary">
+    <body>
         <script type="text/javascript" src="js/script.js"></script>
         <script src="js/jquery.min.js"></script>
         <script src="js/tether.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
 
-        <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse sticky-top">
-            <a href="../index.html" class="navbar-brand text-primary" id="logo">WEBTEK 2018</a>
+        <nav class="navbar navbar-toggleable-md navbar-inverse bg-primary fixed-top">
+            <a href="../index.html" class="navbar-brand font-weight-bold logo-color" id="logo">WEBTEK 2018</a>
 
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
                 <span class="navbar-toggler-icon"></span>
@@ -26,25 +27,17 @@
 
             <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                 <ul class="navbar-nav">
-                    <li class="nav-item active dropdown">
+                    <li class="nav-item">
                         <a class="nav-link text-primary text-uppercase" href="../index.html">Home</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link text-primary text-uppercase" href="#" data-toggle="dropdown" data-target="dropdown-target">Prelims</a>
-                        <div class="dropdown-menu body-bg text-primary" aria-labelledby="dropdown_target">
-                            <a class="dropdown-item" href="#www">WWW</a>
-                            <a class="dropdown-item" href="#http">HTTP</a>
-                        </div>
+                    <li class="nav-item">
+                        <a class="nav-link text-primary text-uppercase" href="../links/prelims.html" id="active">Prelims</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link text-primary text-uppercase" href="#" data-toggle="dropdown" data-target="dropdown-target">Midterms</a>
-                        <div class="dropdown-menu body-bg text-primary" aria-labelledby="dropdown_target">
-                            <a class="dropdown-item" href="midterms.html#css">CSS</a>
-                            <a class="dropdown-item" href="midterms.html#javascript">JavaScript</a>
-                        </div>
+                    <li class="nav-item">
+                        <a class="nav-link text-primary text-uppercase" href="../links/midterms.html">Midterms</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link text-primary text-uppercase" href="#" data-toggle="dropdown" data-target="dropdown-target">Finals</a>
+                    <li class="nav-item">
+                        <a class="nav-link text-primary text-uppercase" href="#">Finals</a>
                     </li>
                 </ul>
             </div>

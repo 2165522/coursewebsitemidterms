@@ -1,6 +1,95 @@
+body{
+    font-family: 'Hind';
+    background-color: #eddbcd !important;
+}
+
+h3 {
+    font-weight: bold;
+}
+
+@media (max-width: 768px){
+    .heading1-img{
+        margin-top: 4vw !important;
+        margin-right: 4vw !important;
+        width: 70% !important;
+    }
+}
+
+@media (min-width: 350px){
+    .xs {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
+    h1{
+        font-size: 2.3em;
+    }
+
+    h4{
+        font-size: 1.5em;
+    }
+    
+    .cont {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+}
+
+@media (min-width: 992px){
+    h1{
+        font-size: 3em;
+    }
+
+    .heading1-img{
+        margin-top: 1vw !important;
+        margin-right: 1vw !important;
+        width: 50% !important;
+    }
+}
+
+@media (min-width: 1200px){
+    h1{
+        font-size: 3.5em;
+    }
+
+    h4{
+        font-size: 2em;
+    }
+
+    .jumbotron {
+        padding-left: 5vw !important;
+    }
+
+    nav {
+        #logo{
+            text-indent: 2em;
+            font-size: 1.5em !important;
+        }
+        a {
+            font-size: 1.1em !important;
+        }
+    }
+}
+
+@media (min-width: 1500px){
+    h1{
+        font-size: 5.8em;
+    }
+
+    h4{
+        font-size: 3em;
+    }
+
+    nav {
+        a {
+            font-size: 1.3em !important;
+        }
+    }
+}
+
 div{
     .jumbotron{
-        background:url('../img/cover2.jpg') no-repeat;
+        //background:url('../img/cover2.jpg') no-repeat;
         background-size: cover;
         background-position: 0 60%;
     }
@@ -8,9 +97,13 @@ div{
 
 
 .navbar {
+    a#active {
+        color: #eddbcd !important;
+        font-weight: bold;
+    }
     z-index: 100;
     width:100%;
-    background-color: none !important;
+    background-color: #c0b3a0 !important;
 
     @media(max-width:34em){
         background-color: #2C3531 !important;
@@ -22,7 +115,7 @@ div{
     }
 
     .nav-link{
-        font-weight: bold;
+        font-weight: normal;
     }
 
     .nav-item{
@@ -34,7 +127,7 @@ div{
 
         .nav-link{
             @media(max-width:34em){
-                color: #D1E8E2 !important;
+                color: #3f3250 !important;
                 background-color: #2C3531 !important;
                 z-index: 2000;
             }
@@ -50,7 +143,9 @@ div{
 }
 
 .heading1-img{
-    width: 60%;
+    margin-top: 0 !important;
+    margin-right: 4vw !important;
+    width: 50%;
 }
 
 .dropdown-menu {
@@ -74,25 +169,43 @@ div.link{
     h1{
         height: 7vh;
         line-height: 7vh;
+        font-weight: bold;
     }
     position: sticky;
     display: block;
     padding: 0;
     width: 100%;
-    height: 8.5vh;
-    line-height: 8.5vh;
-    top:8vh;
+    height: 4em;
+    line-height: 3em;
+    top: 3.7em;
     float:inherit;
-    overflow: auto;
+    overflow-y: hidden;
+    overflow-x: hidden;
     text-align: center;
     margin-top: 5px;
     margin-bottom: 10px;
     border-bottom: 1px black solid;
-    background-color: #D1E8E2;
+    background-color: #eddbcd;
+
+    @media (min-width: 1200px){
+        padding-top: 0.7em;
+        height: 3.7em;
+        top: 3.7em;
+    }
+    
+    @media (min-width: 350px){
+        padding-top: 0.7em;
+        height: 3.7em;
+        top: 3.4em;
+    }
 }
 
-.bg-primary{
-    background-color: #D1E8E2 !important;
+.bg-primary-home{
+    background-color: #eddbcd !important;
+}
+
+.bg-primary {
+    background-color: #192231 !important;
 }
 
 .bg-inverse{
@@ -104,12 +217,37 @@ div.link{
     border-radius: 0 !important;
 }
 
-.text-content-primary {
-    color: #2C3531;
+.jumbotron {
+    background-color: #192231 !important;
+    padding-left: 0 !important; 
+    padding-right: 0 !important; 
+    .row {
+        padding-top: 2vw !important;
+        padding-bottom: 2vw !important;
+        padding-left: 4vw !important;
+        color: #c06014 !important;
+        background-color: #cdcdcd;
+        height: auto !important;
+        margin-top: 20vh !important;
+        margin-bottom: 20vh !important;
+    }
 }
 
-.navbar{
-    height: 8vh;
+
+.text-content-primary {
+    color: #2C3531 ;
+}
+
+.text-primary{
+    color: #c0b3a0 !important;
+}
+
+.text-primary-home{
+    color: black !important;
+}
+
+.logo-color-home {
+    color: #c06014 !important;
 }
 
 .dropdown-item{
@@ -117,7 +255,7 @@ div.link{
 }
 
 .anchor{
-    display: block;
+    display: none;
     height: 8vh; /*same height as header*/
     margin-top: 8vh; /*same height as header*/
     visibility: hidden;
@@ -142,4 +280,12 @@ tr:nth-of-type(odd) {
 }
 tr:nth-of-type(even) {
     background-color:gray;
+}
+
+//
+.custom-toggler.navbar-toggler {
+    border-color: rgb(255,102,203);
+}
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,203, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
