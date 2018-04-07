@@ -82,30 +82,62 @@
                                         <span class="indent">color: green;</span><br>
                                         }
                                     </div>
-                                    <p>The css file is declared in the &lt;head&gt; tag of the html file</p>
+                                    <p>The link to the css file is declared in the &lt;head&gt; tag of the html file</p>
                                     <div class="code-sample">
                                         <span class="comment">// index.html with a link to an external stylesheet (style.css)</span><br>
                                         &lt;!DOCTYPE html&gt;<br>
                                         &lt;html&gt;<br>
                                         <span class="indent"></span>&lt;head&gt; <br>
-                                        <span class="indent"></span><span class="indent"></span>&lt;link type="text/css" rel="stylesheet" src="style.css"&gt;<br>
+                                        <span class="emphasis">
+                                            <span class="indent2"></span>&lt;link type="text/css" rel="stylesheet" src="style.css"&gt;<br>
+                                        </span>
+                                        <span class="indent"></span>&lt;/head&gt; <br>
                                         <span class="indent"></span>&lt;body&gt; <br>
-                                        <span class="indent"></span><span class="indent"></span>&lt;h1 class="samp"&gt;Hello World!&lt;/h1&gt;<br>
+                                        <span class="indent2"></span>&lt;h1 class="samp"&gt;Hello World!&lt;/h1&gt;<br>
                                         <span class="indent"></span>&lt;/body&gt; <br>
                                         &lt;/html&gt; <br>
                                     </div>
 
-                                    <li>embedded (internal) stylesheets</li>
+                                    <li class="font-weight-bold">embedded (internal) stylesheets</li>
+                                    <p>The styles are declared inside a &lt;style&gt;&lt;/style&gt; tag. The &lt;style&gt;&lt;/style&gt; tag is declared inside the &lt;head&gt;&lt;/head&gt; tag</p>
                                     <div class="code-sample">
-                                        &lt;
+                                        <span class="comment">// index.html with an embedded css</span><br>
+                                        &lt;!DOCTYPE html&gt;<br>
+                                        &lt;html&gt;<br>
+                                        <span class="indent"></span>&lt;head&gt; <br>
+                                        <span class="emphasis">
+                                            <span class="indent2"></span>&lt;style&gt; <br>
+                                        </span>
+                                        <span class="indent3"></span>.samp {<br>
+                                        <span class="indent4">font-size: 2.5em;</span><br>
+                                        <span class="indent4">color: green;</span><br>
+                                        <span class="indent3"></span>}<br>
+                                        <span class="emphasis"> 
+                                            <span class="indent2"></span>&lt;/style&gt; <br>
+                                        </span>
+                                        <span class="indent"></span>&lt;/head&gt; <br>
+                                        <span class="indent"></span>&lt;body&gt; <br>
+                                        <span class="indent2"></span>&lt;h1 class="samp"&gt;Hello World!&lt;/h1&gt;<br>
+                                        <span class="indent"></span>&lt;/body&gt; <br>
+                                        &lt;/html&gt; <br>
                                     </div>
-                                    <li>inline styles</li>
+                                    <li class="font-weight-bold">inline styles</li>
+                                    <p>The styles are declared inside an attribute (style) of an element.</p>
+                                    <div class="code-sample">
+                                        <span class="comment">// index.html with inline-declared styles</span><br>
+                                        &lt;!DOCTYPE html&gt;<br>
+                                        &lt;html&gt;<br>
+                                        <span class="indent"></span>&lt;body&gt; <br>
+                                        <span class="indent2"></span>&lt;h1 class="samp" style="font-size: 2.5em; color:green;"&gt;Hello World!&lt;/h1&gt;<br>
+                                        <span class="indent"></span>&lt;/body&gt; <br>
+                                        &lt;/html&gt; <br>
+                                    </div>
                                 </ul>
                             </ul>
                             <li>user styles</li>
                             <ul>
                                 <li>some browser provides (non-standard) alternatives through plugins/extensions
-                                    (e.g. stylish)</li>
+                                    <span class="font-italic">(e.g.<a href="https://userstyles.org/"> stylish</a>)</span></li>
                             </ul>
                             <li>user agent styles</li>
                             <ul>
@@ -132,12 +164,10 @@
                         </ul>
                         <h3>CSS Selector</h3>
                         <ul>
-                            <li>Selector</li>
-                            <ul>
-                                <li>structure used as a condition in a CSS rule to determine which elements in the document tree are 
-                                    matched by the selector and are thus targeted by the formatting specified in the CSS rule declaration block</li>
-                                <li>the matched elements are called the <i>subjects</i> of the selector</li>
-                            </ul>
+                            <li>Structure used as a condition in a CSS rule to determine which elements in the document tree are 
+                                matched by the selector and are thus targeted by the formatting specified in the CSS rule declaration block</li>
+                            <li>The matched elements are called the <span class="emphasis font-italic">subjects</span> of the selector</li>
+
                             <li>Selector Syntax</li>
                             <ul>
                                 <li>chain of one or more sequences of simple selectors separated by combinations with one pseudo 
@@ -151,13 +181,33 @@
                             </ul>
                             <li>The subjects of a single sequence of simple selectors are the elements that match <i>all</i> the selectors in the sequence</li>
                             <li>Combinators are used to impose additional matching <i>constraints</i> applied by <i>prepending</i> another sequence of selectors and the combinator to a sequence. with the subjects of the entire selector being some <i>subset</i> of the elements matched by the <i>last</i> sequence</li>
-                            <li>Types of Simple Selectors</li>
+                            <li class="font-weight-bold">Types of Simple Selectors</li>
                             <ul>
-                                <li>Universal Selector: *{color: blue;}</li>
-                                <li>Type Selectors: h2 {color: #fff;}</li>
-                                <li>ID Selectors: navBar {padding-right: 2px;}</li>
-                                <li>Class Selectors: ul.top-ten {list-style: square;}</li>
-                                <li>Attribute Selectors: h1[lang != fr] {font-style: bold;}</li>
+                                <li>Universal Selector:</li>
+                                <div class="code-sample">
+                                    * {<br>
+                                    <span class="indent">color: blue;</span><br>}
+                                </div>
+                                <li>Type Selectors:</li>
+                                <div class="code-sample">
+                                    h2 {<br>
+                                    <span class="indent"></span>color: #fff;<br>}
+                                </div>
+                                <li>ID Selectors:</li>
+                                <div class="code-sample">
+                                    #navBar {<br>
+                                    <span class="indent"></span>padding-right: 2px;<br>}
+                                </div>
+                                <li>Class Selectors:</li>
+                                <div class="code-sample">
+                                    ul.top-ten {<br>
+                                    <span class="indent"></span>list-style: square;<br>}
+                                </div>
+                                <li>Attribute Selectors:</li>
+                                <div class="code-sample">
+                                    h1[lang != fr] {<br>
+                                    <span class="indent"></span>font-style: bold;<br>}
+                                </div>
                             </ul>
                         </ul>
                         <h3>Pseudo-Classes</h3>
@@ -222,7 +272,7 @@
                             <ul>
                                 <li>when such rules target different properties, their effects cascade (i.e, are combined)</li>
                                 <li>when the styles involve the same property, they conflict, and must be resolved such that only one style is
-			                     applied</li>
+                                    applied</li>
                                 <li>resolution:</li>
                                 <ul>
                                     <li>by origin and importance</li>
@@ -378,15 +428,15 @@
                                     <li>Foundation</li>
                                     <li>Materialize</li>
                                 </ul>
-                            <li>Polyfills</li>
-                            <ul>
-                                <li>provides features that developers expect browsers to provide natively</li>
-                                <li>Example:</li>
+                                <li>Polyfills</li>
                                 <ul>
-                                    <li>Modernizr</li>
-                                    <li>Selectivizr</li>
-                                </ul>
-                            </ul>    
+                                    <li>provides features that developers expect browsers to provide natively</li>
+                                    <li>Example:</li>
+                                    <ul>
+                                        <li>Modernizr</li>
+                                        <li>Selectivizr</li>
+                                    </ul>
+                                </ul>    
                             </ul>
                         </ul>
                     </div>

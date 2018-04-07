@@ -1,17 +1,38 @@
 body{
     font-family: 'Hind';
     background-color: #eddbcd !important;
+    background-size: cover;
+}
+
+.emphasis{
+    color: red;
+}
+
+.emphasis2{
+    color:green;
 }
 
 .code-sample{
     .comment{
         color: gray !important;
     }
-    
+
     .indent {
         margin-left: 1em;
     }
-    background-color: #cccccc;
+
+    .indent2 {
+        margin-left: 2em;
+    }
+
+    .indent3{
+        margin-left: 3em;
+    }
+
+    .indent4{
+        margin-left: 4em;
+    }
+    background-color: #e8e8e8;
     border: 1px solid #c98474;
     border-radius: 1em;
     padding: 1em 2em;
@@ -46,7 +67,7 @@ h3 {
     h4{
         font-size: 1.5em;
     }
-    
+
     .cont {
         padding-left: 1em;
         padding-right: 1em;
@@ -181,11 +202,13 @@ div{
     li, p{
         font-size: calc(17px + 0.8vh);
     }
-    
+
     p{
-       margin-left: 1em; 
+        text-indent: 2.5em;
+        text-align: justify;
+        margin-left: 1em; 
     }
-    
+
 }
 
 div.link{
@@ -215,7 +238,7 @@ div.link{
         height: 3.7em;
         top: 3.7em;
     }
-    
+
     @media (min-width: 350px){
         padding-top: 0.7em;
         height: 3.7em;
@@ -310,5 +333,5 @@ tr:nth-of-type(even) {
     border-color: rgb(255,102,203);
 }
 .custom-toggler .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,203, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,203, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
