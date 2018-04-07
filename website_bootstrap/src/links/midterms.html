@@ -60,6 +60,130 @@
                     </div>
                     <div class="cont">
                         <!-- INSERT CSS CONTENTS HERE -->
+                        <h2>Cascading Style Sheet (CSS)</h2>
+                        <ul>
+                            <li>language used to specify the presentation (e.g. layout, formatting, fonts, colors, etc.) of
+                            structurally marked up documents (e.g. HTML)</li>
+                            <li>developed by Håkon Wium Lie and Bert Bos</li>
+                        </ul>
+                        <h3>Version History</h3>
+                        <ul>
+                            <li>CSS Level 1 (CSS1, W3C Recommendation, Dec 1996)</li>
+                            <li>CSS Level 2 (CSS2, W3C Recommendation, May 1998)</li>
+                            <li>CSS Level 2 Revision 1 (CSS 2.1, W3C Recommendation, June 2011)</li>
+                            <li>CSS Level 3</li>
+                            <ul>
+                                <li>modular approach to CSS development (as opposed to the monolithic specification of CSS 2.1)</li>
+                            </ul>
+                        </ul>
+                        <h3>HTML Style Sheets</h3>
+                        <ul>
+                            <li>the source of a style denotes its origin, which is used in determining its precedence
+                            in the cascade</li>
+                            <li>sources of styles for HTML Documents</li>
+                            <ul>
+                                <li>author styles</li>
+                                <li>external (a.k.a linked) stylesheets (recommended)</li>
+                                <li>embedded (a.k.a internal) stylesheets</li>
+                                <li>inline styles</li>
+                            </ul>
+                            <li>user styles</li>
+                            <ul>
+                                <li>some browser provides (non-standard) alternatives through plugins/extensions
+                                (e.g. stylish)</li>
+                            </ul>
+                            <li>user agent styles</li>
+                            <ul>
+                                <li>sample default user agent stylesheet from CSS 2.1</li>
+                            </ul>
+                        </ul>
+                        <h3>CSS Statements</h3>
+                        <h3>CSS Selector</h3>
+                        <ul>
+                            <li>Selector</li>
+                            <ul>
+                                <li>structure used as a condition in a CSS rule to determine which elements in the document tree are 
+		                        matched by the selector and are thus targeted by the formatting specified in the CSS rule declaration block</li>
+                                <li>the matched elements are called the <i>subjects</i> of the selector</li>
+                            </ul>
+                            <li>Selector Syntax</li>
+                            <ul>
+                                <li>chain of one or more sequences of simple selectors separated by combinations with one pseudo 
+		                        element possibly appended to the last sequence</li>
+                                <li>sequence of simple selectors</li>
+                                <ul>
+                                    <li>chain of simple selectors not separated by combinators</li>
+                                    <li>always starts with a <i>type selector</i> or a <i>universal selector</i>(may be implied)</li>
+                                    <li>cannot contain other type selectors or universal selectors</li>
+                                </ul>
+                            </ul>
+                            <li>The subjects of a single sequence of simple selectors are the elements that match <i>all</i> the selectors in the sequence</li>
+                            <li>Combinators are used to impose additional matching <i>constraints</i> applied by <i>prepending</i> another sequence of selectors and the combinator to a sequence. with the subjects of the entire selector being some <i>subset</i> of the elements matched by the <i>last</i> sequence</li>
+                            <li>Types of Simple Selectors</li>
+                            <ul>
+                                <li>Universal Selector: *{color: blue;}</li>
+                                <li>Type Selectors: h2 {color: #fff;}</li>
+                                <li>ID Selectors: navBar {padding-right: 2px;}</li>
+                                <li>Class Selectors: ul.top-ten {list-style: square;}</li>
+                                <li>Attribute Selectors: h1[lang != fr] {font-style: bold;}</li>
+                            </ul>
+                        </ul>
+                        <h3>Pseudo-Classes</h3>
+                        <ul>
+                            <li>Dynamic Pseudo-Classes</li>
+                            <ul>
+                                <li>link pseudo-classes</li>
+                                <ul>
+                                    <li>:link</li>
+                                    <li>:visited</li>
+                                </ul>
+                                <li>user action pseudo-classes</li>
+                                <ul>
+                                    <li>:hover</li>
+                                    <li>:active</li>
+                                    <li>:focus</li>
+                                </ul>
+                            </ul>
+                            <li>Target Pseudo-Class</li>
+                            <ul>
+                                <li>:target</li>
+                            </ul>
+                            <li>Language Pseudo-Class</li>
+                            <ul>
+                                <li>:lang()</li>
+                            </ul>
+                            <li>UI Element States Pseudo-Classes</li>
+                            <ul>
+                                <li>:enbled</li>
+                                <li>:disabled></li>
+                                <li>:checked</li>
+                                <li>:indeterminte</li>
+                            </ul>
+                            <li>Structural Pseudo-Classes</li>
+                            <ul>
+                                <li>:root</li>
+                                <li>:first-child, :last-child, :only-child</li>
+                                <li>:nth-child(), :nth-last-child()</li>
+                                <li>:first-of-type, :last-of-type, :only-of-type</li>
+                                <li>:nth-of-type(), :nth-last-of-type()</li>
+                                <li>:empty</li>
+                            </ul>
+                            <li>Negation Pseudo-Class</li>
+                            <ul>
+                                <li>:not()</li>
+                            </ul>
+                        </ul>
+                        <h3>Pseudo Combinators</h3>
+                        <ul>
+                        <li>provides additional condition</li>
+                        <li>descendant combinator (whitespace, i.e, space, tab, line feed, carriage return, form</li>
+                        <li>child combinator (>)</li>
+                        <li>sibling combinators</li>
+                            <ul>
+                                <li>adjacent sibling combinator (+)</li>
+                                <li>general sibling combinator (~)</li>
+                            </ul>
+                        </ul>
                     </div>
                     <span class="anchor" id="javascript"></span>
                     <div class="link">
