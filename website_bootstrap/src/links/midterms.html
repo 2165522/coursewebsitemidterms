@@ -68,14 +68,37 @@
                         </ul>
                         <h3>HTML Style Sheets</h3>
                         <ul>
-                            <li>the source of a style denotes its origin, which is used in determining its precedence
-                                in the cascade</li>
+                            <li>the source of a style denotes its origin, which is used in determining its precedence in the cascade</li>
                             <li>sources of styles for HTML Documents</li>
                             <ul>
                                 <li>author styles</li>
                                 <ul>
-                                    <li>external (linked) stylesheets</li>
+                                    <li class="font-weight-bold">external (linked) stylesheets</li>
+                                    <p>The author/developer stores the css styles in a .css file</p>
+                                    <div class="code-sample">
+                                        <span class="comment">// style.css</span><br>
+                                        .samp {<br>
+                                        <span class="indent">font-size: 2.5em;</span><br>
+                                        <span class="indent">color: green;</span><br>
+                                        }
+                                    </div>
+                                    <p>The css file is declared in the &lt;head&gt; tag of the html file</p>
+                                    <div class="code-sample">
+                                        <span class="comment">// index.html with a link to an external stylesheet (style.css)</span><br>
+                                        &lt;!DOCTYPE html&gt;<br>
+                                        &lt;html&gt;<br>
+                                        <span class="indent"></span>&lt;head&gt; <br>
+                                        <span class="indent"></span><span class="indent"></span>&lt;link type="text/css" rel="stylesheet" src="style.css"&gt;<br>
+                                        <span class="indent"></span>&lt;body&gt; <br>
+                                        <span class="indent"></span><span class="indent"></span>&lt;h1 class="samp"&gt;Hello World!&lt;/h1&gt;<br>
+                                        <span class="indent"></span>&lt;/body&gt; <br>
+                                        &lt;/html&gt; <br>
+                                    </div>
+
                                     <li>embedded (internal) stylesheets</li>
+                                    <div class="code-sample">
+                                        &lt;
+                                    </div>
                                     <li>inline styles</li>
                                 </ul>
                             </ul>

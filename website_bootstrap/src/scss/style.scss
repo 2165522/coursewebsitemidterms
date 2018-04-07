@@ -3,6 +3,24 @@ body{
     background-color: #eddbcd !important;
 }
 
+.code-sample{
+    .comment{
+        color: gray !important;
+    }
+    
+    .indent {
+        margin-left: 1em;
+    }
+    background-color: #cccccc;
+    border: 1px solid #c98474;
+    border-radius: 1em;
+    padding: 1em 2em;
+    height: auto;
+    font-family: Consolas;
+    font-size: 1.3em;
+    margin-bottom: 1em;
+}
+
 h3 {
     font-weight: bold;
 }
@@ -160,9 +178,14 @@ div{
     h1 {
         font-size: calc(22px + 1vh);
     }
-    li{
+    li, p{
         font-size: calc(17px + 0.8vh);
     }
+    
+    p{
+       margin-left: 1em; 
+    }
+    
 }
 
 div.link{
