@@ -4,6 +4,7 @@
         <title>WebTech2018</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="../favicon2.ico" type="image/x-icon" />
 
         <link href='https://fonts.googleapis.com/css?family=Hind' rel='stylesheet'>
         <link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -13,19 +14,20 @@
     </head>
 
     <body>
-        <script type="text/javascript" src="js/script.js"></script>
-        <script src="js/jquery.min.js"></script>
-        <script src="js/tether.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-
+        <script type="text/javascript" src="../js/script.js"></script>
+        <script src="../js/jquery.min.js"></script>
+        <script src="../js/tether.min.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+        
+        
         <nav class="navbar navbar-toggleable-md navbar-inverse bg-primary sticky-top">
             <a href="../index.html" class="navbar-brand font-weight-bold logo-color" id="logo">WEBTEK 2018</a>
 
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navContent">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse justify-content-end" id="navContent">
                 <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link text-primary text-uppercase" href="../index.html">Home</a>
@@ -43,9 +45,9 @@
             </div>
         </nav>
 
-        <div class="contents text-content-primary">
+        
+       <div class="contents text-content-primary">
             <div class="row">
-
                 <div class="col-md-2"></div>
                 <div class="col-md-8 col-sm-12">
                     <span class="anchor" id="css"></span>
@@ -74,17 +76,19 @@
                             <ul>
                                 <li>author styles</li>
                                 <ul>
+                                    <span class="anchor" id="ext12"></span>
                                     <li class="font-weight-bold">external (linked) stylesheets</li>
-                                    <p>The author/developer stores the css styles in a .css file</p>
-                                    <div class="code-sample">
+                                    <p>The author/developer stores the css styles in a .css file<br><a href="#ext12" onclick="toggle_visibility('ext1');">(Sample Code)</a></p>
+                                    <div class="code-sample" id="ext1">
                                         <span class="comment">/* style.css */</span><br>
                                         .samp {<br>
                                         <span class="indent">font-size: 2.5em;</span><br>
                                         <span class="indent">color: green;</span><br>
                                         }
                                     </div>
-                                    <p>The link to the css file is declared in the &lt;head&gt; tag of the html file</p>
-                                    <div class="code-sample">
+                                    <p>The link to the css file is declared in the &lt;head&gt; tag of the html file<br><a href="#ext22" onclick="toggle_visibility('ext2');">(Sample Code)</a></p>
+                                    <span class="anchor" id="ext22"></span>
+                                    <div class="code-sample" id="ext2">
                                         <span class="comment">/* index.html with a link to an external stylesheet (style.css) */</span><br>
                                         &lt;!DOCTYPE html&gt;<br>
                                         &lt;html&gt;<br>
@@ -99,9 +103,10 @@
                                         &lt;/html&gt; <br>
                                     </div>
 
+                                    <span class="anchor" id="emb2"></span>
                                     <li class="font-weight-bold">embedded (internal) stylesheets</li>
-                                    <p>The styles are declared inside a &lt;style&gt;&lt;/style&gt; tag. The &lt;style&gt;&lt;/style&gt; tag is declared inside the &lt;head&gt;&lt;/head&gt; tag</p>
-                                    <div class="code-sample">
+                                    <p>The styles are declared inside a &lt;style&gt;&lt;/style&gt; tag. The &lt;style&gt;&lt;/style&gt; tag is declared inside the &lt;head&gt;&lt;/head&gt; tag<br><a href="#emb2" onclick="toggle_visibility('emb');">(Sample Code)</a></p>
+                                    <div class="code-sample" id="emb">
                                         <span class="comment">/* index.html with an embedded css */</span><br>
                                         &lt;!DOCTYPE html&gt;<br>
                                         &lt;html&gt;<br>
@@ -122,9 +127,10 @@
                                         <span class="indent"></span>&lt;/body&gt; <br>
                                         &lt;/html&gt; <br>
                                     </div>
+                                    <span class="anchor" id="inl2"></span>
                                     <li class="font-weight-bold">inline styles</li>
-                                    <p>The styles are declared inside an attribute (style) of an element.</p>
-                                    <div class="code-sample">
+                                    <p>The styles are declared inside an attribute (style) of an element.<br><a href="#inl2" onclick="toggle_visibility('inl');">(Sample Code)</a></p>
+                                    <div class="code-sample" id="inl">
                                         <span class="comment">/* index.html with inline-declared styles */</span><br>
                                         &lt;!DOCTYPE html&gt;<br>
                                         &lt;html&gt;<br>
@@ -149,44 +155,50 @@
                         <ul>
                             <li>At-rules</li>
                             <ul>
-                                <li class="font-weight-bold">@charset</li>
-                                <p>This rule is used to define the character set used by the browser.</p>
-                                <div class="code-sample">
-                                    <span class="comment">/* Sample @charset declaration */</span>
+                                <span class="anchor" id="charset2"></span>
+                                <li><a href="#charset2" onclick="toggle_visibility('charset');">@charset</a> - This rule is used to define the character set used by the browser.</li>
+                                <div class="code-sample" id="charset">
+                                    <span class="comment">/* Sample @charset declaration */</span><br>
                                     @charset "UTF-8";
                                 </div>
-                                <li class="font-weight-bold">@import</li>
-                                <p>This rule is used by a .css file to import another external stylesheet (css file) in the file. </p>
-                                <div class="code-sample">
+                                
+                                <span class="anchor" id="import2"></span>
+                                <li><a href="#import2" onclick="toggle_visibility('import');">@import</a> - This rule is used by a .css file to import another external stylesheet (css file) in the file.</li>
+                                <div class="code-sample" id="import">
                                     <span class="comment">/* The rule is declared at the very top of the file */ </span><br>
                                     @import 'style2.css';
                                 </div>
-                                <li class="font-weight-bold">@namespace</li>
-                                <p>This rule is used particularly for XHTML files so that the XHTML elements can be accessed as selectors in the CSS.</p>
-                                <div class="code-sample">
+                                
+                                <span class="anchor" id="namespace2"></span>
+                                <li><a href="#namespace2" onclick="toggle_visibility('namespace');">@namespace</a> - This rule is used particularly for XHTML files so that the XHTML elements can be accessed as selectors in the CSS.</li>
+                                <div class="code-sample" id="namespace">
                                     <span class="comment">/* Namespace for XHTML */</span><br>
                                     @namespace url(http://www.w3.org/1999/xhtml);
                                 </div>
-                                <li class="font-weight-bold">@media</li>
-                                <p>This rule is used to set conditional statements to specific screens</p>
-                                <div class="code-sample">
+                                
+                                <span class="anchor" id="media2"></span>
+                                <li><a href="#media2" onclick="toggle_visibility('media');">@media</a> - This rule is used to set conditional statements to specific screens.</li>
+                                <div class="code-sample" id="media">
                                     <span class="comment">/* Sample @media declaration */</span><br>
                                     @media (min-width: 768px) {<br><span class="indent"></span>font-size: 2em;<br>}<br>
                                     @media (min-width: 576px) {<br><span class="indent"></span>font-size: 1.5em;<br>}
                                 </div>
-                                <li class="font-weight-bold">@font-face</li>
-                                <p>This rule is used to link a custom font to be used on the website, with this rule, you can also customize the font attributes of that certain font.</p>
-                                <div class="code-sample">
+                                
+                                <span class="anchor" id="font-face2"></span>
+                                <li><a href="#font-face2" onclick="toggle_visibility('font-face');">@font-face</a> - This rule is used to link a custom font to be used on the website, with this rule, you can also customize the font attributes of that certain font.</li>
+                                <div class="code-sample" id="font-face">
                                     <span class="comment">/* Sample @font-face declaration */</span><br>
                                     @font-face {<br><span class="indent"></span>font-family: 'MyFont';<br><span class="indent"></span>src: url('font.otf') format('otf'),<br><span class="indent3"></span>url('font.ttf') format('ttf');<br>}
                                 </div>
-                                <li class="font-weight-bold">@keyframes</li>
-                                <p>This rule is used for keyframe animations on CSS properties, allowing every developer to mark the start, stop, and in-between marks for the animation.</p>
-                                <div class="code-sample">
+                                
+                                <span class="anchor" id="keyframes2"></span>
+                                <li><a href="#keyframes2" onclick="toggle_visibility('keyframes');">@keyframes</a> - This rule is used for keyframe animations on CSS properties, allowing every developer to mark the start, stop, and in-between marks for the animation.</li>
+                                <div class="code-sample" id="keyframes">
                                     <span class="comment">/* Sample @keyframes declaration */</span><br>
                                     @keyframes pulse {<br>
                                     <span class="indent"></span>50% {<br><span class="indent2"></span>background-color: #ccc;<br><span class="indent"></span>}<br><span class="indent"></span>100% {<br><span class="indent2"></span>background-color: #eee;<br><span class="indent"></span>}<br>
                                 </div>
+                                From <i>https://css-tricks.com/the-at-rules-of-css/</i>
                             </ul>
                             <li>CSS Rule Sets (a.k.a., CSS Rules, Style Rules)</li>
                             <ul>
@@ -214,28 +226,29 @@
                             <li>Combinators are used to impose additional matching <i>constraints</i> applied by <i>prepending</i> another sequence of selectors and the combinator to a sequence. with the subjects of the entire selector being some <i>subset</i> of the elements matched by the <i>last</i> sequence</li>
                             <li class="font-weight-bold">Types of Simple Selectors</li>
                             <ul>
-                                <li>Universal Selector:</li>
-                                <div class="code-sample">
+                                <span class="anchor" id="1sel2"></span>
+                                <li class="font-weight-bold"><a href="#1sel2" onclick="toggle_visibility('1sel');">Universal Selector:</a></li>
+                                <div class="code-sample" id="1sel">
                                     * {<br>
                                     <span class="indent">color: blue;</span><br>}
                                 </div>
-                                <li>Type Selectors:</li>
-                                <div class="code-sample">
+                                <li class="font-weight-bold"><a href="#typsel" onclick="toggle_visibility('typsel');">Type Selectors:</a></li>
+                                <div class="code-sample" id="typsel">
                                     h2 {<br>
                                     <span class="indent"></span>color: #fff;<br>}
                                 </div>
-                                <li>ID Selectors:</li>
-                                <div class="code-sample">
+                                <li class="font-weight-bold"><a href="#idsel" onclick="toggle_visibility('idsel');">ID Selectors:</a></li>
+                                <div class="code-sample" id="idsel">
                                     #navBar {<br>
                                     <span class="indent"></span>padding-right: 2px;<br>}
                                 </div>
-                                <li>Class Selectors:</li>
-                                <div class="code-sample">
+                                <li class="font-weight-bold"><a href="#csel" onclick="toggle_visibility('csel');">Class Selectors:</a></li>
+                                <div class="code-sample" id="csel">
                                     ul.top-ten {<br>
                                     <span class="indent"></span>list-style: square;<br>}
                                 </div>
-                                <li>Attribute Selectors:</li>
-                                <div class="code-sample">
+                                <li class="font-weight-bold"><a href="#attsel" onclick="toggle_visibility('attsel');">Attribute Selectors:</a></li>
+                                <div class="code-sample" id="attsel">
                                     h1[lang != fr] {<br>
                                     <span class="indent"></span>font-style: bold;<br>}
                                 </div>
@@ -248,168 +261,42 @@
                                 <li>link pseudo-classes</li>
                                 <ul>
                                     <li>:link</li>
-                                    <div class = "code-sample">
-                                    <span class = "comment">/*unvisited link*/</span><br>
-                                    a:link {<br>
-                                    <span class = "indent"></span>color: #FF0000;<br>}
-                                    </div>
                                     <li>:visited</li>
-                                    <div class = "code-sample">
-                                    <span class = "comment">/*visited link*/</span><br>
-                                    a:visited {<br>
-                                    <span class = "indent"></span>color: #OOFFOO;<br>}
-                                    </div>
                                 </ul>
                                 <li>user action pseudo-classes</li>
                                 <ul>
                                     <li>:hover</li>
-                                    <div class = "code-sample">
-                                    <span class = "comment">/*mouse over link*/</span><br>
-                                    a:hover {<br>
-                                    <span class = "indent"></span>color: #FF00FF;<br>}
-                                    </div>
                                     <li>:active</li>
-                                    <div class = "code-sample">
-                                    <span class = "comment">/*selected link*/</span><br>
-                                    a:active {<br>
-                                    <span class = "indent"></span>color: #0000FF;<br>}
-                                    </div>
                                     <li>:focus</li>
-                                    <div class = "code-sample">
-                                        <span class = "comment">/*triggered when the hyperlink has focus*/</span><br>
-                                        a:focus {<br>
-                                        <span class = "indent"></span>color: #099CC;<br>}
-                                    </div>
                                 </ul>
                             </ul>
                             <li>Target Pseudo-Class</li>
                             <ul>
                                 <li>:target</li>
-                                <div class = "code-sample">
-                                    h1:target {<br>
-                                    <span class = "indent"></span>font-size: 25px;<br>
-                                    <span class = "indent"></span>text-decoration: italized;<br>
-                                    <span class = "indent"></span>color: #37aee4;<br>}
-                                </div>
                             </ul>
                             <li>Language Pseudo-Class</li>
                             <ul>
                                 <li>:lang()</li>
-                                <div class = "code-sample">
-                                p:lang(it) { <br>
-                                <span class = "indent"></span>background: green;<br>}
-                                </div>
                             </ul>
                             <li>UI Element States Pseudo-Classes</li>
                             <ul>
-                                <li>:enabled</li>
-                                <div class = "code-sample">
-                                    <span class = "comment">/*Selects enabled input*/</span><br>
-                                    input:enabled {<br>
-                                    <span class= "indent"></span>color: yellow;<br>}
-                                </div>
-                                <li>:disabled</li>
-                                 <div class = "code-sample">
-                                    <span class = "comment">/*Selects disabled input*/</span><br>
-                                    input:disabled {<br>
-                                    <span class= "indent"></span>background-color: red;<br>}
-                                </div>
+                                <li>:enbled</li>
+                                <li>:disabled></li>
                                 <li>:checked</li>
-                                <div class = "code-sample">
-                                    <span class = "comment">/*Matches checked radio, checkbox, etc.*/</span><br>
-                                    :checked {<br>
-                                    <span class = "indent"></span>border: 5px red;<br>}
-                                </div>
-                                <li>:indeterminate</li>
-                                <div class = "code-sample">
-                                    <span class = "comment">/*Selects input  that the status is indeterminate*/</span><br>
-                                    input:indeterminate {<br>
-                                    <span class = "indent"></span>background: violet;<br>}
-                                </div>
+                                <li>:indeterminte</li>
                             </ul>
                             <li>Structural Pseudo-Classes</li>
                             <ul>
                                 <li>:root</li>
-                                <div class = "code-sample">
-                                    <span class = "comment">/*Selects the root element*/</span><br>
-                                    :root { <br>
-                                    <span class = "indent"></span>background: blue;<br>}
-                                </div>
-                                <li>:first-child</li>
-                                <div class = "code-sample">
-                                    <span class = "comment">/*Selects any type that is the 1st element among its siblings*/</span><br>
-                                    p:first-child {<br>
-                                    <span class = "indent"></span>color: yellow;<br>}
-                                </div>
-                                <li>:last-child</li>
-                                <div class = "code-sample">
-                                    <span class = "comment">/*Selects any type that is the last element among its siblings*/</span><br>
-                                    p:last-child {<br>
-                                    <span class = "indent"></span>color: brown;<br>}
-                                </div>
-                                <li>:only-child</li>
-                                <div class = "code-sample">
-                                    <span class = "comment">/*Selects every type if and only if it is the only child of its parent*/</span><br>
-                                    p:only-child {<br>
-                                    <span class = "indent"></span>color: green;<br>}
-                                </div>
-                                <li>:nth-child()</li>
-                                <div class = "code-sample">
-                                    <span class = "comment">/*Selects every nth element among any group of siblings*/</span><br>
-                                    :nth-child(7n) {<br>
-                                    <span class = "indent"></span>color: yellow;<br>}
-                                </div>
-                                <li>:nth-last-child()</li>
-                                <div class = "code-sample">
-                                    <span class = "comment">/*Selects every nth element but counting backwards from the last child*/</span><br>
-                                    :nth-last-child (5n) {<br>
-                                    <span class = "indent"></span>color: violet;<br>}
-                                </div>
-                                <li>:first-of-type</li>
-                                <div class = "code-sample">
-                                    <span class = "comment">/*Selects any type that is the 1st element among its siblings*/</span><br>
-                                    p:first-of-type {<br>
-                                    <span class = "indent"></span>color: black;<br>}
-                                </div>
-                                <li>:last-of-type</li>
-                                <div class = "code-sample">
-                                    <span class ="comment">/*Selects any type that is the lsat element among its siblings*/</span><br>
-                                     p:last-of-type {<br>
-                                    <span class = "indent"></span>color: brown;<br>}
-                                </div>
-                                <li>:only-of-type</li>
-                                <div class = "code-sample">
-                                    <span class = "comment">/*Selects each type if and only if it is the only type element inside its parent*/</span><br>
-                                    p:only-of-type {<br>
-                                    <span class = "indent"></span>color: red;<br>}
-                                </div>
-                                <li>:nth-of-type()</li>
-                                <div class = "code-sample">
-                                    <span class = "comment">/*Selects every nth type element among any group of siblings*/</span><br>
-                                    p:nth-of-type(8n) {<br>
-                                    <span class = "indent"></span>color: green;<br>}
-                                </div>
-                                <li>:nth-last-of-type()</li>
-                                <div class = "code-sample">
-                                    <span class = "comment">Selects every nth type element but counting backwards from the last one*/</span><br>
-                                    p:nth-last-of-type (2n) {<br>
-                                    <span class = "indent"></span>color: beige;<br>}
-                                </div>
+                                <li>:first-child, :last-child, :only-child</li>
+                                <li>:nth-child(), :nth-last-child()</li>
+                                <li>:first-of-type, :last-of-type, :only-of-type</li>
+                                <li>:nth-of-type(), :nth-last-of-type()</li>
                                 <li>:empty</li>
-                                <div class = "code-sample">
-                                    <span class = "comment">/*Selects any type that has no content*/</span><br>
-                                    div: empty {<br>
-                                    <span class = "indent"></span>background: lime;<br>}
-                                </div>
                             </ul>
                             <li>Negation Pseudo-Class</li>
                             <ul>
                                 <li>:not()</li>
-                                <div class = "code-sample">
-                                    <span class = "comment">/*Selects any element that is not the specified type*/</span><br>
-                                    :not(h1) {<br>
-                                    <span class = "indent"></span>color: grey;<br>}
-                                </div>
                             </ul>
                         </ul>
                         <h3>Pseudo Combinators</h3>
@@ -420,15 +307,7 @@
                             <li>sibling combinators</li>
                             <ul>
                                 <li>adjacent sibling combinator (+)</li>
-								<div class = "code-sample">
-                                    <span class = "comment">/*selects all elements that are the adjacent siblings of a specified element.*/</span><br>
-                                    div + p {<br>
-                                    <span class = "indent"></span>background-color: yellow;<br>}
-                                </div>
                                 <li>general sibling combinator (~)</li>
-								<span class = "comment">/*selects all elements that are siblings of a specified element.*/</span><br>
-                                    div ~ p {<br>
-                                    <span class = "indent"></span>background-color: blue;<br>}
                             </ul>
                         </ul>
                         <h3>CSS Rule Precedence</h3>
@@ -469,18 +348,10 @@
                                     <li>used by browser vendors as a <i>prefix </i> for the names of <i>experimental </i>or <i>non-standard </i>CSS properties; lately, vendors are moving away from vendor prefixes in favor of use-controlled flags or preferences</li>
                                     <li>Example:</li>
                                     <ul>
-                                        <li>-webkit-</li> 
-						<div class = "code-sample">
-						<span class = "comment">/*safari is backed by a rendering engine to draw the HTML/CSS web page with webkit*/</span><br>
-						<span class = "indent"></span>width: 100px;<br>
-						<span class = "indent"></span>height: 100px;<br>
-						<span class = "indent"></span>background: red;<br>
-						<span class = "indent"></span>-webkit-transition: width 2s; /* Safari */<br>
-						<span class = "indent"></span>transition: width 2s;<br>}
-						</div>
-                                        <li>-moz-</li> <!--Provide Example -->
-                                        <li>-o-</li> <!--Provide Example -->
-                                        <li>-ms-</li> <!--Provide Example -->
+                                        <li>-webkit-</li>
+                                        <li>-moz-</li>
+                                        <li>-o-</li>
+                                        <li>-ms-</li>
                                     </ul>
                                 </ul>
                                 <li>custom properties a.k.a, CSS Variables (experimental)</li>
@@ -553,33 +424,27 @@
                                         <li>color keywords: blue</li>
                                         <li>RGB hexadecimal notation</li>
                                         <ul>
-                                           <!--Provide Example -->
+                                            <li>#C0C0C0</li>
+                                            <li>#008000</li>
+                                            <li>#FF00FF</li>
                                         </ul>
                                         <li>RGB functions</li>
                                         <ul>
-                                        <div class = "code-sample">
-                                    	<span class = "comment">/*An RGB color value is specified with: rgb(red, green, blue).*/</span><br>
-					div { <br>
-                                    	<span class = "indent"></span>background-color: rgb(0, 191, 255);<br>
-    					<span class = "indent"></span>color: rgb(255, 255, 255);<br>
-					<span class = "indent"></span>}<br>}
-                                	</div>
+                                            <li>rgb(255,0,0)</li>
+                                            <li>rgb(0,0,255)</li>
+                                            <li>rgb(0,255,0)</li>
                                         </ul>
                                         <li>HSL functions</li>
                                         <ul>
-                                        <div class = "code-sample">
-                                    	<span class = "comment">/*The hsl() function accepts the HSL value as a parameter*/</span><br>
-					body { <br>
-                                    	<span class = "indent"></span>color: hsl(30, 100%, 50%);<br>
-    					<span class = "indent"></span>background-color: hsl(120, 100%, 50%);<br>
-					<span class = "indent"></span>}<br>}
-                                	</div>
+                                            <li>hsl(311, 40%, 69%)</li>
+                                            <li>hsl(64, 40%, 69%)</li>
+                                            <li>hsl(96, 25%, 37%)</li>
                                         </ul>
                                         <li>currentcolor, transparent</li>
                                     </ul>
                                     <li>strings</li>
                                     <ul>
-                                        <li>delimited by single quotes (') or double quotes (")</li> <!--Provide Example -->
+                                        <li>delimited by single quotes (') or double quotes (")</li>
                                     </ul>
                                     <li>functions</li>
                                     <li>miscellaneous types</li>
@@ -624,27 +489,25 @@
                         <h1>JavaScript</h1>
                     </div>
                     <div class="cont">
-                        <ul>
-                            <li>The LiveScript language was designed at <strong>Netscape Communications</strong> to make the Java support in Netscape Navigator more accessible to non-Java programmers. LiveScript, like any scripting language, is a loosely-typed language. It is intended for a large audience of Web designers and developers.</li>
-                            <li>In <strong>December 1995</strong>, LiveScript was renamed <em><strong>JavaScript</strong></em> and released as part of Netscape Navigator 2.0. Except for marketing purposes, JavaScript has nothing to do with the Java language developed and maintained by Sun Microsystems. The Web community started then to manipulate the content of Web documents, in order to bring interactivity and typography to the formerly static Web.</li>
-                            <li><strong>Developer:</strong> Netscape Communications Corporation, Mozilla Foundation, Ecma International</li>
-                        </ul>
+                        <p>The <strong>LiveScript</strong> language was designed at Netscape Communications to make the Java support in Netscape Navigator more accessible to non-Java programmers. LiveScript, like any scripting language, is a <i>loosely-typed</i> language. It is intended for a large audience of Web designers and developers.</p>
+                        <p>In December 1995, LiveScript was renamed JavaScript and released as part of Netscape Navigator 2.0. Except for marketing purposes, JavaScript has nothing to do with the Java language developed and maintained by Sun Microsystems. The Web community started then to manipulate the content of Web documents, in order to bring interactivity and typography to the formerly static Web.</p>
+                        <p><strong>Developers:</strong> Netscape Communications Corporation, Mozilla Foundation, Ecma International</p>
                         <h3>ECMAScript Editions</h3>
                         <ul>
-                            <li><strong>ECMAScript 1</strong> - Was developed in the year <strong>1997</strong>,First edition of ECMAScript.</li>
-                            <li><strong>ECMAScript 2</strong> - Was developed in the year <strong>1998</strong>,Editorial changes.</li>
-                            <li><strong>ECMAScript 3</strong> - Was developed in the year <strong>1999</strong>,Added Regular expressions and added the try catch.</li>
+                            <li><strong>ECMAScript 1 (1997)</strong></li>
+                            <li><strong>ECMAScript 2 (1998)</strong><p class="font-italic">Editorial changes.</p></li>
+                            <li><strong>ECMAScript 3 (1999)</strong><p class="font-italic">Added Regular expressions and added the try catch.</p></li>
                             <li><strong>ECMAScript 4</strong> - was never released.</li>
-                            <li><strong>ECMAScript 5</strong> - Was developed in the year <strong>2009</strong>,Added "strict mode" and added Json support.</li>
-                            <li><strong>ECMAScript 5.1</strong> - Was developed in the year <strong>2011</strong>,Editorial changes.</li>
-                            <li><strong>ECMAScript 6</strong> - Was developed in the year <strong>2015</strong>, Added classes and modules.</li>
-                            <li><strong>ECMAScript 7</strong> - Was developed in the year <strong>2016</strong>, Added exponential operator (**) and added array.prototype.includes</li>
+                            <li><strong>ECMAScript 5 (2009)</strong><p class="font-italic">Added "strict mode" and added Json support.</p></li>
+                            <li><strong>ECMAScript 5.1 (2011)</strong><p class="font-italic">Editorial changes.</p></li>
+                            <li><strong>ECMAScript 6 (2015)</strong><p class="font-italic">Added classes and modules.</p></li>
+                            <li><strong>ECMAScript 7 (2016)</strong><p class="font-italic">Added exponential operator (**) and added array.prototype.includes</p></li>
                         </ul> 
 
                         <h3>JavaScript Execution Environment</h3>                       
                         <ul>
-                            <li>Core JavaScript(EcmaScript) Language Api</li>
-                            <li>(Traditional) Browser Object Model(BOM)Api</li>
+                            <li>Core JavaScript<i>(EcmaScript)</i> Language API</li>
+                            <li>(Traditional) Browser Object Model (<i>BOM</i>) API</li>
                             <ul>
                                 <li> Window,Navigator,Screen,Location,History</li>
                                 <li>Document Object Model (DOM) Api</li>
@@ -671,26 +534,25 @@
                                 <li>getElementById()</li>
                                 <div class="code-sample">
                                     <span class="comment">// getElementById()</span><br>
-                                    <span class="indent"> var myElement = document.getElementById("Hello");</span><br>
-
+                                    var myElement = document.getElementById("Hello");<br>
                                 </div>
                                 <li>getElementsByTagName(), getElementsByClassName()</li>
                                 <div class="code-sample">
                                     <span class="comment">// getElementByTagName()</span><br>
-                                    <span class="indent"> var x = document.getElementsByTagName("p");</span><br>                                     
+                                    var x = document.getElementsByTagName("p");<br>
                                 </div>
                                 <div class="code-sample">
                                     <span class="comment">// getElementByClassName()</span><br>
-                                    <span class="indent"> var x = document.getElementsByClassName("intro");</span><br>                                     
+                                    var x = document.getElementsByClassName("intro");<br>                
                                 </div>                                                                     
                                 <li>querySelector(), querySelectorAll()</li>
                                 <div class="code-sample">
                                     <span class="comment">// querySelector()</span><br>
-                                    <span class="indent"> var x = document.querySelector("p.intro");</span><br>                                     
+                                    var x = document.querySelector("p.intro");<br>  
                                 </div>
                                 <div class="code-sample">
                                     <span class="comment">// querySelectorAll()</span><br>
-                                    <span class="indent"> var x = document.querySelectorAll("p.intro");</span><br>                                     
+                                    var x = document.querySelectorAll("p.intro");<br>
                                 </div>                                                                       
                             </ul>
                             <li>traverse the DOM tree (from a given node)</li>
@@ -698,32 +560,32 @@
                                 <li>firstChild,lastChild,nextSibling,previousSibling</li>
                                 <div class="code-sample">
                                     <span class="comment">// firstChild</span><br>
-                                    <span class="indent">var x = document.getElementById("myList").firstChild.innerHTML;</span><br>                      
+                                    var x ==document.getElementById("myList").firstChild.innerHTML;<br>
                                 </div>
                                 <div class="code-sample">
                                     <span class="comment">// lastChild</span><br>
-                                    <span class="indent">var x = document.getElementById("myList").lastChild.innerHTML;</span><br>                       
+                                    var x = document.getElementById("myList").lastChild.innerHTML;<br>        
                                 </div>
                                 <div class="code-sample">
                                     <span class="comment">// nextSibling</span><br>
-                                    <span class="indent">var x = document.getElementById("item1").nextSibling.innerHTML;</span><br>                                     
+                                    var x = document.getElementById("item1").nextSibling.innerHTML;<br>                                     
                                 </div>
                                 <div class="code-sample">
                                     <span class="comment">// previousSibling</span><br>
-                                    <span class="indent">var x = document.getElementById("item2").previousSibling.innerHTML;</span><br>                                     
+                                   var x = document.getElementById("item2").previousSibling.innerHTML;<br>    
                                 </div>                                                                                                                                            
                                 <li>firstElementChild,lastElementChild,nextElementSibling,previousElementSibling</li>
                                 <div class="code-sample">
                                     <span class="comment">// firstElementChild</span><br>
-                                    <span class="indent">var x = document.getElementById("myList").firstElementChild.innerHTML;</span><br>                                     
+                                   var x = document.getElementById("myList").firstElementChild.innerHTML;<br>                                     
                                 </div>  
                                 <div class="code-sample">
                                     <span class="comment">// lastElementChild</span><br>
-                                    <span class="indent">var x = document.getElementById("myList").lastElementChild.innerHTML;</span><br>                                     
+                                    var x = document.getElementById("myList").lastElementChild.innerHTML;<br>                                     
                                 </div>  
                                 <div class="code-sample">
                                     <span class="comment">// nextElementSibling</span><br>
-                                    <span class="indent">var x = document.getElementById("item1").nextElementSibling.innerHTML;</span><br>                                     
+                                    var x = document.getElementById("item1").nextElementSibling.innerHTML;<br>                                     
                                 </div>  
                                 <div class="code-sample">
                                     <span class="comment">// previousElementSibling</span><br>
@@ -735,30 +597,29 @@
                                 <li>createElement(),createTextNode(),createAttribute(), etc</li>
                                 <div class="code-sample" id="s">
                                     <span class="comment">// createElement()</span><br>
-                                    <span class="indent">var btn = document.createElement("BUTTON");</span><br>                                     
+                                    var btn = document.createElement("BUTTON");<br>                                     
                                 </div>  
                                 <div class="code-sample">
                                     <span class="comment">// createTextNode()</span><br>
-                                    <span class="indent">var t = document.createTextNode("Hello World");</span><br>                                     
+                                    var t = document.createTextNode("Hello World");<br>                                     
                                 </div>  
                                 <div class="code-sample">
                                     <span class="comment">// createAttribute()</span><br>
-                                    <span class="indent">var att = document.createAttribute("attrib");</span><br>                                     
+                                    var att = document.createAttribute("attrib");<br>                                     
                                 </div>  
 
                                 <li><a onclick="myFunction()">cloneNode()</a>,importNode()</li>                                                              
 
                                 <div class ="code-sample" >
                                     <span class="comment">// cloneNode()</span><br>
-                                    <span class="indent">var itm = document.getElementById("myList2").lastChild;</span><br>
-                                    <span class="indent">var cln = itm.cloneNode(true);</span>
+                                    var itm = document.getElementById("myList2").lastChild;<br>
+                                    var cln = itm.cloneNode(true);
                                 </div>
 
 
                                 <div class="code-sample" id="s">
                                     <span class="comment">// importNode()</span><br>
-                                    <span class="indent">var newNode = document.importNode(oldNode, true);</span><br>
-
+                                    var newNode = document.importNode(oldNode, true);<br>
                                 </div>                                                            
                             </ul>
                             <li>Manipulate the DOM tree</li>
