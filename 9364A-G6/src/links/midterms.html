@@ -419,8 +419,16 @@
                             <li>child combinator (>)</li>
                             <li>sibling combinators</li>
                             <ul>
-                                <li>adjacent sibling combinator (+)</li> <!--Provide Example -->
-                                <li>general sibling combinator (~)</li> <!--Provide Example -->
+                                <li>adjacent sibling combinator (+)</li>
+								<div class = "code-sample">
+                                    <span class = "comment">/*selects all elements that are the adjacent siblings of a specified element.*/</span><br>
+                                    div + p {<br>
+                                    <span class = "indent"></span>background-color: yellow;<br>}
+                                </div>
+                                <li>general sibling combinator (~)</li>
+								<span class = "comment">/*selects all elements that are siblings of a specified element.*/</span><br>
+                                    div ~ p {<br>
+                                    <span class = "indent"></span>background-color: blue;<br>}
                             </ul>
                         </ul>
                         <h3>CSS Rule Precedence</h3>
@@ -461,7 +469,15 @@
                                     <li>used by browser vendors as a <i>prefix </i> for the names of <i>experimental </i>or <i>non-standard </i>CSS properties; lately, vendors are moving away from vendor prefixes in favor of use-controlled flags or preferences</li>
                                     <li>Example:</li>
                                     <ul>
-                                        <li>-webkit-</li> <!--Provide Example -->
+                                        <li>-webkit-</li> 
+										<div class = "code-sample">
+										<span class = "comment">/*safari is backed by a rendering engine to draw the HTML/CSS web page with webkit*/</span><br>
+										<span class = "indent"></span>width: 100px;<br>
+										<span class = "indent"></span>height: 100px;<br>
+										<span class = "indent"></span>background: red;<br>
+										<span class = "indent"></span>-webkit-transition: width 2s; /* Safari */<br>
+										<span class = "indent"></span>transition: width 2s;<br>}
+										</div>
                                         <li>-moz-</li> <!--Provide Example -->
                                         <li>-o-</li> <!--Provide Example -->
                                         <li>-ms-</li> <!--Provide Example -->
