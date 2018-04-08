@@ -1,0 +1,139 @@
+<li>21. DOM stands for ______.</li>
+<input type="radio" name="q21" value="A" A.Document Object Model<br>*
+<input type="radio" name="q21" value="B" B.Data Object Model<br>
+<input type="radio" name="q21" value="C" C.Document Object Master<br>
+<input type="radio" name="q21" value="D" D.Data Object Master<br> 
+<br>
+
+<li>22. BOM stands for ______.</li>
+<input type="radio" name="q22" value="A" A.Browser Object Master<br>
+<input type="radio" name="q22" value="B" B.Business Object Master<br>
+<input type="radio" name="q22" value="C" C.Browser Object Model<br>*
+<input type="radio" name="q22" value="D" D.Business Object Model<br> 
+<br>
+
+<li>23. API that allows access to the HTML document from within scripts associated with the web page?</li>
+<input type="radio" name="q23" value="A" A.DOM<br>*
+<input type="radio" name="q23" value="B" B.BOM<br>
+<input type="radio" name="q23" value="C" C.javascript<br>
+<input type="radio" name="q23" value="D" D.CSS<br> 
+<br>
+
+<li>24. Which of the following doesnt belong to the group?</li>
+<input type="radio" name="q24" value="A" A.Geolocation<br>
+<input type="radio" name="q24" value="B" B.Node<br>*
+<input type="radio" name="q24" value="C" C.IndexedDB<br>
+<input type="radio" name="q24" value="D" D.Local storage<br> 
+<br>
+
+<li>25. accessed via the Document object property of the global window object</li>
+<input type="radio" name="q25" value="A" A.CSS<br>
+<input type="radio" name="q25" value="B" B.javascript<br>
+<input type="radio" name="q25" value="C" C.BOM<br>
+<input type="radio" name="q25" value="D" D.DOM<br>*
+<br>
+
+<li>26. It was created to standardize JavaScript, so as to foster multiple independent implementations/</li>
+<input type="radio" name="q26" value="A" A.javascript<br>
+<input type="radio" name="q26" value="B" B.ECMAScript<br>*
+<input type="radio" name="q26" value="C" C.CSS<br>
+<input type="radio" name="q26" value="D" D.DOM<br> 
+<br>
+
+<li>27. Which of the following doesnt belong to the group?</li>
+<input type="radio" name="q27" value="A" A.appendChild()<br>
+<input type="radio" name="q27" value="B" B.insertBefore()<br>
+<input type="radio" name="q27" value="C" C.replaceChild()<br>
+<input type="radio" name="q27" value="D" D.firstChild,<br>* 
+<br>
+
+<li>28. Which of the following doesnt belong to the group?</li>
+<input type="radio" name="q28" value="A" A.lastChild<br>
+<input type="radio" name="q28" value="B" B.removeChild()<br>*
+<input type="radio" name="q28" value="C" C.nextSibling<br>
+<input type="radio" name="q28" value="D" D.previousSibling<br> 
+<br>
+
+<li>29.</li>
+<input type="radio" name="q29" value="A" A.javascript<br>
+<input type="radio" name="q29" value="B" B.javascript<br>
+<input type="radio" name="q29" value="C" C.javascript<br>
+<input type="radio" name="q29" value="D" D.javascript<br> 
+<br>
+
+<li>30.</li>
+<input type="radio" name="q30" value="A" A.javascript<br>
+<input type="radio" name="q30" value="B" B.javascript<br>
+<input type="radio" name="q30" value="C" C.javascript<br>
+<input type="radio" name="q30" value="D" D.javascript<br> 
+<br>
+
+<li>31.</li>
+<input type="radio" name="q31" value="A" A.javascript<br>
+<input type="radio" name="q31" value="B" B.javascript<br>
+<input type="radio" name="q31" value="C" C.javascript<br>
+<input type="radio" name="q31" value="D" D.javascript<br> 
+<br>
+
+<li>32.</li>
+<input type="radio" name="q32" value="A" A.javascript<br>
+<input type="radio" name="q32" value="B" B.javascript<br>
+<input type="radio" name="q32" value="C" C.javascript<br>
+<input type="radio" name="q32" value="D" D.javascript<br> 
+<br>
+
+<li>33.</li>
+<input type="radio" name="q33" value="A" A.javascript<br>
+<input type="radio" name="q33" value="B" B.javascript<br>
+<input type="radio" name="q33" value="C" C.javascript<br>
+<input type="radio" name="q33" value="D" D.javascript<br> 
+<br>
+
+<li>34.</li>
+<input type="radio" name="q34" value="A" A.javascript<br>
+<input type="radio" name="q34" value="B" B.javascript<br>
+<input type="radio" name="q34" value="C" C.javascript<br>
+<input type="radio" name="q34" value="D" D.javascript<br> 
+<br>
+
+<li>35.</li>
+<input type="radio" name="q35" value="A" A.javascript<br>
+<input type="radio" name="q35" value="B" B.javascript<br>
+<input type="radio" name="q35" value="C" C.javascript<br>
+<input type="radio" name="q35" value="D" D.javascript<br> 
+<br>
+
+<li>36.</li>
+<input type="radio" name="q36" value="A" A.javascript<br>
+<input type="radio" name="q36" value="B" B.javascript<br>
+<input type="radio" name="q36" value="C" C.javascript<br>
+<input type="radio" name="q36" value="D" D.javascript<br> 
+<br>
+
+<li>37.</li>
+<input type="radio" name="q37" value="A" A.javascript<br>
+<input type="radio" name="q37" value="B" B.javascript<br>
+<input type="radio" name="q37" value="C" C.javascript<br>
+<input type="radio" name="q37" value="D" D.javascript<br> 
+<br>
+
+<li>38.</li>
+<input type="radio" name="q38" value="A" A.javascript<br>
+<input type="radio" name="q38" value="B" B.javascript<br>
+<input type="radio" name="q38" value="C" C.javascript<br>
+<input type="radio" name="q38" value="D" D.javascript<br> 
+<br>
+
+<li>39.</li>
+<input type="radio" name="q39" value="A" A.javascript<br>
+<input type="radio" name="q39" value="B" B.javascript<br>
+<input type="radio" name="q39" value="C" C.javascript<br>
+<input type="radio" name="q39" value="D" D.javascript<br> 
+<br>
+
+<li>40.</li>
+<input type="radio" name="q40" value="A" A.javascript<br>
+<input type="radio" name="q40" value="B" B.javascript<br>
+<input type="radio" name="q40" value="C" C.javascript<br>
+<input type="radio" name="q40" value="D" D.javascript<br> 
+<br>
