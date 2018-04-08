@@ -4,6 +4,35 @@ body{
     background-size: cover;
 }
 
+.quiz{
+    a{
+        color: white !important;
+    }
+    
+    a:hover {
+        color: gray !important;
+    }
+    background-color: #494e6b;
+    font-size: 1.2em;
+    width: auto;
+    height: auto;
+    padding: 1em;
+    float: right;
+    border-radius: 1em;
+}
+
+a {
+    color: #494e6b !important;
+}
+
+a:hover {
+    color: black !important;
+}
+
+.cont {
+    display:none;
+}
+
 .emphasis{
     color: red;
 }
@@ -133,9 +162,10 @@ h3 {
 
 div{
     .jumbotron{
-        //background:url('../img/cover2.jpg') no-repeat;
+        background:url('../img/cover.jpg') no-repeat;
         background-size: cover;
-        background-position: 0 60%;
+        background-position: center;
+        
     }
 }
 
@@ -291,6 +321,10 @@ div.link{
     color: #D1E8E2;
 }
 
+.logo-color {
+    color: #f7f5e6 !important;
+}
+
 .anchor{
     display: none;
     height: 8vh; /*same height as header*/
@@ -326,3 +360,6 @@ tr:nth-of-type(even) {
 }
 
 //
+input {
+    display: inline;
+}

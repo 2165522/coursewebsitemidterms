@@ -18,8 +18,8 @@
         <script src="../js/jquery.min.js"></script>
         <script src="../js/tether.min.js"></script>
         <script src="../js/bootstrap.min.js"></script>
-        
-        
+
+
         <nav class="navbar navbar-toggleable-md navbar-inverse bg-primary sticky-top">
             <a href="../index.html" class="navbar-brand font-weight-bold logo-color" id="logo">WEBTEK 2018</a>
 
@@ -45,16 +45,16 @@
             </div>
         </nav>
 
-        
-       <div class="contents text-content-primary">
+
+        <div class="contents text-content-primary">
             <div class="row">
                 <div class="col-md-2"></div>
                 <div class="col-md-8 col-sm-12">
-                    <span class="anchor" id="css"></span>
                     <div class="link">
-                        <h1>Cascading Style Sheets</h1>
+                        <a href="#css2" onclick="toggle_visibility('css');"><h1>Cascading Style Sheets</h1></a>
                     </div>
-                    <div class="cont">
+                    <span class="anchor" id="css2"></span>
+                    <div class="cont" id="css">
                         <ul>
                             <li>language used to specify the presentation <span class="font-italic">(e.g. layout, formatting, fonts, colors, etc.)</span> of structurally marked up documents <span class="font-italic">(e.g. HTML)</span></li>
                             <li>developed by Håkon Wium Lie and Bert Bos</li>
@@ -161,21 +161,21 @@
                                     <span class="comment">/* Sample @charset declaration */</span><br>
                                     @charset "UTF-8";
                                 </div>
-                                
+
                                 <span class="anchor" id="import2"></span>
                                 <li><a href="#import2" onclick="toggle_visibility('import');">@import</a> - This rule is used by a .css file to import another external stylesheet (css file) in the file.</li>
                                 <div class="code-sample" id="import">
                                     <span class="comment">/* The rule is declared at the very top of the file */ </span><br>
                                     @import 'style2.css';
                                 </div>
-                                
+
                                 <span class="anchor" id="namespace2"></span>
                                 <li><a href="#namespace2" onclick="toggle_visibility('namespace');">@namespace</a> - This rule is used particularly for XHTML files so that the XHTML elements can be accessed as selectors in the CSS.</li>
                                 <div class="code-sample" id="namespace">
                                     <span class="comment">/* Namespace for XHTML */</span><br>
                                     @namespace url(http://www.w3.org/1999/xhtml);
                                 </div>
-                                
+
                                 <span class="anchor" id="media2"></span>
                                 <li><a href="#media2" onclick="toggle_visibility('media');">@media</a> - This rule is used to set conditional statements to specific screens.</li>
                                 <div class="code-sample" id="media">
@@ -183,14 +183,14 @@
                                     @media (min-width: 768px) {<br><span class="indent"></span>font-size: 2em;<br>}<br>
                                     @media (min-width: 576px) {<br><span class="indent"></span>font-size: 1.5em;<br>}
                                 </div>
-                                
+
                                 <span class="anchor" id="font-face2"></span>
                                 <li><a href="#font-face2" onclick="toggle_visibility('font-face');">@font-face</a> - This rule is used to link a custom font to be used on the website, with this rule, you can also customize the font attributes of that certain font.</li>
                                 <div class="code-sample" id="font-face">
                                     <span class="comment">/* Sample @font-face declaration */</span><br>
                                     @font-face {<br><span class="indent"></span>font-family: 'MyFont';<br><span class="indent"></span>src: url('font.otf') format('otf'),<br><span class="indent3"></span>url('font.ttf') format('ttf');<br>}
                                 </div>
-                                
+
                                 <span class="anchor" id="keyframes2"></span>
                                 <li><a href="#keyframes2" onclick="toggle_visibility('keyframes');">@keyframes</a> - This rule is used for keyframe animations on CSS properties, allowing every developer to mark the start, stop, and in-between marks for the animation.</li>
                                 <div class="code-sample" id="keyframes">
@@ -365,34 +365,34 @@
                                     <span class = "indent"></span>background: blue;<br>}
                                 </div>
                                 <li>
-                                <a href="#fchild2" onclick="toggle_visibility('fchild');">:first-child</a>,
-                                <a href="#lchild2" onclick="toggle_visibility('lchild');">:last-child</a> ,
-                                <a href="#ochild2" onclick="toggle_visibility('ochild');">:only-child</a>,
-                                <a href="#nchild2" onclick="toggle_visibility('nchild');">:nth-child()</a>,
-                                <a href="#nlchild2" onclick="toggle_visibility('nlchild');">:nth-last-child()</a>
+                                    <a href="#fchild2" onclick="toggle_visibility('fchild');">:first-child</a>,
+                                    <a href="#lchild2" onclick="toggle_visibility('lchild');">:last-child</a> ,
+                                    <a href="#ochild2" onclick="toggle_visibility('ochild');">:only-child</a>,
+                                    <a href="#nchild2" onclick="toggle_visibility('nchild');">:nth-child()</a>,
+                                    <a href="#nlchild2" onclick="toggle_visibility('nlchild');">:nth-last-child()</a>
                                 </li>
                                 <div class = "code-sample" id ="fchild">
                                     <span class = "comment">/*Selects any type that is the 1st element among its siblings*/</span><br>
                                     p:first-child {<br>
                                     <span class = "indent"></span>color: yellow;<br>}<br>
                                 </div>
-                                    <div class = "code-sample" id ="lchild">
+                                <div class = "code-sample" id ="lchild">
                                     <span class = "comment">/*Selects any type that is the last element among its siblings*/</span><br>
                                     p:last-child {<br>
                                     <span class = "indent"></span>color: brown;<br>}<br>
                                 </div>
-                                    
-                                    <div class = "code-sample" id ="ochild">
+
+                                <div class = "code-sample" id ="ochild">
                                     <span class = "comment">/*Selects every type if and only if it is the only child of its parent*/</span><br>
                                     p:only-child {<br>
                                     <span class = "indent"></span>color: green;<br>}<br>
                                 </div>
-                                    <div class = "code-sample" id ="nchild">
+                                <div class = "code-sample" id ="nchild">
                                     <span class = "comment">/*Selects every nth element among any group of siblings*/</span><br>
                                     :nth-child(7n) {<br>
                                     <span class = "indent"></span>color: yellow;<br>}<br>
                                 </div>
-                                    <div class = "code-sample" id ="nlchild">
+                                <div class = "code-sample" id ="nlchild">
                                     <span class = "comment">/*Selects every nth element but counting backwards from the last child*/</span><br>
                                     :nth-last-child (5n) {<br>
                                     <span class = "indent"></span>color: violet;<br>}
@@ -412,7 +412,7 @@
                                 </div>
                                 <div class = "code-sample" id ="ltype">
                                     <span class ="comment">/*Selects any type that is the last element among its siblings*/</span><br>
-                                     p:last-of-type {<br>
+                                    p:last-of-type {<br>
                                     <span class = "indent"></span>color: brown;<br>}<br>
                                 </div>
                                 <div class = "code-sample" id ="otype">
@@ -487,37 +487,27 @@
                                         <span class="anchor" id="bground2"></span>
                                         <li><a href="#bground2" onclick="toggle_visibility('bground');">background</a></li>
                                         <div class = "code-sample" id ="bground">
-                                            background-color: red;
+                                            background: red no-repeat top left;
                                         </div>
                                         <span class="anchor" id="fnt2"></span>
                                         <li><a href="#fnt2" onclick="toggle_visibility('fnt');">font</a></li>
                                         <div class = "code-sample" id ="fnt">
-                                            font-style: bold;
+                                            font: 1.6em bold italic sans-serif;
                                         </div>
                                         <span class="anchor" id="mrg2"></span>
                                         <li><a href="#mrg2" onclick="toggle_visibility('mrg');">margin</a></li>
                                         <div class = "code-sample" id ="mrg">
-                                             margin-top: 77px;
+                                            margin: 20px 20px 15px 10px;
                                         </div>
                                         <span class="anchor" id="pad2"></span>
                                         <li><a href="#pad2" onclick="toggle_visibility('pad');">padding</a></li>
                                         <div class = "code-sample" id ="pad">
-                                            padding-bottom: 36px;
+                                            padding: 2px 3px;
                                         </div>
                                         <span class="anchor" id="bord2"></span>
                                         <li><a href="#bord2" onclick="toggle_visibility('bord');">border</a></li>
                                         <div class = "code-sample" id ="bord">
-                                            border-style: dotted;
-                                        </div>
-                                        <span class="anchor" id="bordl2"></span>
-                                        <li><a href="#bordl2" onclick="toggle_visibility('bordl');">border-left</a></li>
-                                        <div class = "code-sample" id ="bordl">
-                                        border-left: 48px red;
-                                        </div>
-                                        <span class="anchor" id="bordw2"></span>
-                                        <li><a href="#bordw2" onclick="toggle_visibility('bordw');">border-width</a></li>
-                                        <div class = "code-sample" id ="bordw">
-                                        border-width: thick;
+                                            border: 1px solid black;
                                         </div>
                                     </ul>
                                 </ul>
@@ -651,22 +641,25 @@
                                     <li>Materialize</li>
                                 </ul>
                             </ul>
-                                <li>Polyfills</li>
+                            <li>Polyfills</li>
+                            <ul>
+                                <li>provides features that developers expect browsers to provide natively</li>
+                                <li>Example:</li>
                                 <ul>
-                                    <li>provides features that developers expect browsers to provide natively</li>
-                                    <li>Example:</li>
-                                    <ul>
-                                        <li>Modernizr</li>
-                                        <li>Selectivizr</li>
-                                    </ul>
-                                </ul>    
-                            </ul>
+                                    <li>Modernizr</li>
+                                    <li>Selectivizr</li>
+                                </ul>
+                            </ul>    
+                        </ul>
+                        <div class="quiz">
+                            <a href="mid_css_quiz.html">Take the quiz!</a>
+                        </div>
                     </div>
-                    <span class="anchor" id="javascript"></span>
                     <div class="link">
-                        <h1>JavaScript</h1>
+                        <a href="#js2" onclick="toggle_visibility('js');"><h1>JavaScript</h1></a>
                     </div>
-                    <div class="cont">
+                    <span class="anchor" id="js2"></span>
+                    <div class="cont" id="js">
                         <p>The <strong>LiveScript</strong> language was designed at Netscape Communications to make the Java support in Netscape Navigator more accessible to non-Java programmers. LiveScript, like any scripting language, is a <i>loosely-typed</i> language. It is intended for a large audience of Web designers and developers.</p>
                         <p>In December 1995, LiveScript was renamed JavaScript and released as part of Netscape Navigator 2.0. Except for marketing purposes, JavaScript has nothing to do with the Java language developed and maintained by Sun Microsystems. The Web community started then to manipulate the content of Web documents, in order to bring interactivity and typography to the formerly static Web.</p>
                         <p><strong>Developers:</strong> Netscape Communications Corporation, Mozilla Foundation, Ecma International</p>
@@ -716,8 +709,8 @@
                                     var myElement = document.getElementById("Hello");<br>
                                 </div>
                                 <li><a href ="#keyframes2" onclick="toggle_visibility('getElementsByTagName()');">getElementsByTagName()</a>, 
-								<a href ="#keyframes2" onclick="toggle_visibility('getElementsByClassName()');">getElementsByClassName()</a>
-								</li>
+                                    <a href ="#keyframes2" onclick="toggle_visibility('getElementsByClassName()');">getElementsByClassName()</a>
+                                </li>
                                 <div class="code-sample" id="getElementsByTagName()">
                                     <span class="comment">// getElementByTagName()</span><br>
                                     var x = document.getElementsByTagName("p");<br>
@@ -726,10 +719,10 @@
                                     <span class="comment">// getElementByClassName()</span><br>
                                     var x = document.getElementsByClassName("intro");<br>                
                                 </div>
-                                                                                                   
+
                                 <li><a href ="#keyframes2" onclick="toggle_visibility('querySelector');">querySelector()</a>, 
-								<a href ="#keyframes2" onclick="toggle_visibility('querySelectorAll');">querySelectorAll()</a>
-								</li>
+                                    <a href ="#keyframes2" onclick="toggle_visibility('querySelectorAll');">querySelectorAll()</a>
+                                </li>
                                 <div class="code-sample" id="querySelector">
                                     <span class="comment">// querySelector()</span><br>
                                     var x = document.querySelector("p.intro");<br>  
@@ -744,10 +737,10 @@
                             <ul>                     
                                 <span class="anchor" id="keyframes2"></span>                               
                                 <li><a href="#keyframes2" onclick="toggle_visibility('firstChild');">firstChild</a>,
-								<a href ="#keyframes2" onclick="toggle_visibility('lastChild');">lastChild</a>,
-								<a href ="#keyframes2" onclick="toggle_visibility('nextSibling');">nextSibling</a>,
-								<a href ="#keyframes2" onclick="toggle_visibility('previousSibling');">previousSibling</a>
-								</li>
+                                    <a href ="#keyframes2" onclick="toggle_visibility('lastChild');">lastChild</a>,
+                                    <a href ="#keyframes2" onclick="toggle_visibility('nextSibling');">nextSibling</a>,
+                                    <a href ="#keyframes2" onclick="toggle_visibility('previousSibling');">previousSibling</a>
+                                </li>
                                 <div class="code-sample" id="firstChild">
                                     <span class="comment">// firstChild</span><br>
                                     var x ==document.getElementById("myList").firstChild.innerHTML;<br>
@@ -762,16 +755,16 @@
                                 </div>
                                 <div class="code-sample" id="previousSibling">
                                     <span class="comment">// previousSibling</span><br>
-                                   var x = document.getElementById("item2").previousSibling.innerHTML;<br>    
+                                    var x = document.getElementById("item2").previousSibling.innerHTML;<br>    
                                 </div>                                                                                                                                            
                                 <li><a href ="#keyframes2" onclick="toggle_visibility('firstElementChild');">firstElementChild</a>,
-								<a href ="#keyframes2" onclick="toggle_visibility('lastElementChild');">lastElementChild</a>,
-								<a href ="#keyframes2" onclick="toggle_visibility('nextElementSibling');">nextElementSibling,</a>
-								<a href ="#keyframes2" onclick="toggle_visibility('previousElementSibling');">previousElementSibling</a>
-								</li>
+                                    <a href ="#keyframes2" onclick="toggle_visibility('lastElementChild');">lastElementChild</a>,
+                                    <a href ="#keyframes2" onclick="toggle_visibility('nextElementSibling');">nextElementSibling,</a>
+                                    <a href ="#keyframes2" onclick="toggle_visibility('previousElementSibling');">previousElementSibling</a>
+                                </li>
                                 <div class="code-sample" id="firstElementChild">
                                     <span class="comment">// firstElementChild</span><br>
-                                   var x = document.getElementById("myList").firstElementChild.innerHTML;<br>                                     
+                                    var x = document.getElementById("myList").firstElementChild.innerHTML;<br>                                     
                                 </div>  
                                 <div class="code-sample" id="lastElementChild">
                                     <span class="comment">// lastElementChild</span><br>
@@ -790,8 +783,8 @@
                             <li>construct/copy nodes</li>
                             <ul>
                                 <li><a href ="#keyframes2" onclick="toggle_visibility('createElement()');">createElement()</a>,
-								<a href ="#keyframes2" onclick="toggle_visibility('createTextNode()');">createTextNode()</a>,
-								<a href ="#keyframes2" onclick="toggle_visibility('createAttribute()');">createAttribute()</a>, etc</li>
+                                    <a href ="#keyframes2" onclick="toggle_visibility('createTextNode()');">createTextNode()</a>,
+                                    <a href ="#keyframes2" onclick="toggle_visibility('createAttribute()');">createAttribute()</a>, etc</li>
                                 <div class="code-sample" id="createElement()">
                                     <span class="comment">// createElement()</span><br>
                                     var btn = document.createElement("BUTTON");<br>                                     
@@ -806,8 +799,8 @@
                                 </div>  
 
                                 <li><a href ="#keyframes2" onclick="toggle_visibility('cloneNode()');">cloneNode()</a>,
-								<a href ="#keyframes2" onclick="toggle_visibility('importNode()');">importNode()</a>
-								</li>                                                              
+                                    <a href ="#keyframes2" onclick="toggle_visibility('importNode()');">importNode()</a>
+                                </li>                                                              
 
                                 <div class ="code-sample" id="cloneNode()">
                                     <span class="comment">// cloneNode()</span><br>
@@ -856,6 +849,9 @@
                             </ul>
 
                         </ul>
+                        <div class="quiz">
+                            <a href="mid_js_quiz.html">Take the quiz!</a>
+                        </div>
                     </div>
                 </div>
             </div>

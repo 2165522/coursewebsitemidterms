@@ -3,6 +3,28 @@ body {
   background-color: #eddbcd !important;
   background-size: cover; }
 
+.quiz {
+  background-color: #494e6b;
+  font-size: 1.2em;
+  width: auto;
+  height: auto;
+  padding: 1em;
+  float: right;
+  border-radius: 1em; }
+  .quiz a {
+    color: white !important; }
+  .quiz a:hover {
+    color: gray !important; }
+
+a {
+  color: #494e6b !important; }
+
+a:hover {
+  color: black !important; }
+
+.cont {
+  display: none; }
+
 .emphasis {
   color: red; }
 
@@ -84,8 +106,9 @@ h3 {
     font-size: 1.3em !important; } }
 
 div .jumbotron {
+  background: url("../img/cover.jpg") no-repeat;
   background-size: cover;
-  background-position: 0 60%; }
+  background-position: center; }
 
 .navbar {
   z-index: 3000;
@@ -201,6 +224,9 @@ div.link {
 .dropdown-item {
   color: #D1E8E2; }
 
+.logo-color {
+  color: #f7f5e6 !important; }
+
 .anchor {
   display: none;
   height: 8vh;
@@ -231,3 +257,6 @@ tr:nth-of-type(odd) {
 
 tr:nth-of-type(even) {
   background-color: gray; }
+
+input {
+  display: inline; }
