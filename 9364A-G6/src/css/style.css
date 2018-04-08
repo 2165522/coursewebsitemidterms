@@ -28,6 +28,9 @@ body {
     margin-left: 3em; }
   .code-sample .indent4 {
     margin-left: 4em; }
+  @media (max-width: 576px) {
+    .code-sample {
+      font-size: 3vw; } }
 
 h3 {
   font-weight: bold; }

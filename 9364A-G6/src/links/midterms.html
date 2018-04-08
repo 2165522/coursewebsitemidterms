@@ -45,8 +45,9 @@
 
         <div class="contents text-content-primary">
             <div class="row">
-                <div class="col-md-2 col-sm-2"></div>
-                <div class="col-md-8 col-sm-8">
+
+                <div class="col-md-2"></div>
+                <div class="col-md-8 col-sm-12">
                     <span class="anchor" id="css"></span>
                     <div class="link">
                         <h1>Cascading Style Sheets</h1>
@@ -76,7 +77,7 @@
                                     <li class="font-weight-bold">external (linked) stylesheets</li>
                                     <p>The author/developer stores the css styles in a .css file</p>
                                     <div class="code-sample">
-                                        <span class="comment">// style.css</span><br>
+                                        <span class="comment">/* style.css */</span><br>
                                         .samp {<br>
                                         <span class="indent">font-size: 2.5em;</span><br>
                                         <span class="indent">color: green;</span><br>
@@ -84,7 +85,7 @@
                                     </div>
                                     <p>The link to the css file is declared in the &lt;head&gt; tag of the html file</p>
                                     <div class="code-sample">
-                                        <span class="comment">// index.html with a link to an external stylesheet (style.css)</span><br>
+                                        <span class="comment">/* index.html with a link to an external stylesheet (style.css) */</span><br>
                                         &lt;!DOCTYPE html&gt;<br>
                                         &lt;html&gt;<br>
                                         <span class="indent"></span>&lt;head&gt; <br>
@@ -101,7 +102,7 @@
                                     <li class="font-weight-bold">embedded (internal) stylesheets</li>
                                     <p>The styles are declared inside a &lt;style&gt;&lt;/style&gt; tag. The &lt;style&gt;&lt;/style&gt; tag is declared inside the &lt;head&gt;&lt;/head&gt; tag</p>
                                     <div class="code-sample">
-                                        <span class="comment">// index.html with an embedded css</span><br>
+                                        <span class="comment">/* index.html with an embedded css */</span><br>
                                         &lt;!DOCTYPE html&gt;<br>
                                         &lt;html&gt;<br>
                                         <span class="indent"></span>&lt;head&gt; <br>
@@ -124,7 +125,7 @@
                                     <li class="font-weight-bold">inline styles</li>
                                     <p>The styles are declared inside an attribute (style) of an element.</p>
                                     <div class="code-sample">
-                                        <span class="comment">// index.html with inline-declared styles</span><br>
+                                        <span class="comment">/* index.html with inline-declared styles */</span><br>
                                         &lt;!DOCTYPE html&gt;<br>
                                         &lt;html&gt;<br>
                                         <span class="indent"></span>&lt;body&gt; <br>
@@ -148,14 +149,44 @@
                         <ul>
                             <li>At-rules</li>
                             <ul>
-                                <li>@charset</li>
-                                <li>@import</li>
-                                <li>@namespace</li>
-                                <li>@media</li>
-                                <li>@supports</li>
-                                <li>@page</li>
-                                <li>@font-face</li>
-                                <li>@keyframes</li>
+                                <li class="font-weight-bold">@charset</li>
+                                <p>This rule is used to define the character set used by the browser.</p>
+                                <div class="code-sample">
+                                    <span class="comment">/* Sample @charset declaration */</span>
+                                    @charset "UTF-8";
+                                </div>
+                                <li class="font-weight-bold">@import</li>
+                                <p>This rule is used by a .css file to import another external stylesheet (css file) in the file. </p>
+                                <div class="code-sample">
+                                    <span class="comment">/* The rule is declared at the very top of the file */ </span><br>
+                                    @import 'style2.css';
+                                </div>
+                                <li class="font-weight-bold">@namespace</li>
+                                <p>This rule is used particularly for XHTML files so that the XHTML elements can be accessed as selectors in the CSS.</p>
+                                <div class="code-sample">
+                                    <span class="comment">/* Namespace for XHTML */</span><br>
+                                    @namespace url(http://www.w3.org/1999/xhtml);
+                                </div>
+                                <li class="font-weight-bold">@media</li>
+                                <p>This rule is used to set conditional statements to specific screens</p>
+                                <div class="code-sample">
+                                    <span class="comment">/* Sample @media declaration */</span><br>
+                                    @media (min-width: 768px) {<br><span class="indent"></span>font-size: 2em;<br>}<br>
+                                    @media (min-width: 576px) {<br><span class="indent"></span>font-size: 1.5em;<br>}
+                                </div>
+                                <li class="font-weight-bold">@font-face</li>
+                                <p>This rule is used to link a custom font to be used on the website, with this rule, you can also customize the font attributes of that certain font.</p>
+                                <div class="code-sample">
+                                    <span class="comment">/* Sample @font-face declaration */</span><br>
+                                    @font-face {<br><span class="indent"></span>font-family: 'MyFont';<br><span class="indent"></span>src: url('font.otf') format('otf'),<br><span class="indent3"></span>url('font.ttf') format('ttf');<br>}
+                                </div>
+                                <li class="font-weight-bold">@keyframes</li>
+                                <p>This rule is used for keyframe animations on CSS properties, allowing every developer to mark the start, stop, and in-between marks for the animation.</p>
+                                <div class="code-sample">
+                                    <span class="comment">/* Sample @keyframes declaration */</span><br>
+                                    @keyframes pulse {<br>
+                                    <span class="indent"></span>50% {<br><span class="indent2"></span>background-color: #ccc;<br><span class="indent"></span>}<br><span class="indent"></span>100% {<br><span class="indent2"></span>background-color: #eee;<br><span class="indent"></span>}<br>
+                                </div>
                             </ul>
                             <li>CSS Rule Sets (a.k.a., CSS Rules, Style Rules)</li>
                             <ul>
@@ -451,27 +482,27 @@
                             <li><strong>Developer:</strong> Netscape Communications Corporation, Mozilla Foundation, Ecma International</li>
                         </ul>
                         <h3>ECMAScript Editions</h3>
-                      <ul>
-                          <li><strong>ECMAScript 1</strong> - Was developed in the year <strong>1997</strong>,First edition of ECMAScript.</li>
-                          <li><strong>ECMAScript 2</strong> - Was developed in the year <strong>1998</strong>,Editorial changes.</li>
-                          <li><strong>ECMAScript 3</strong> - Was developed in the year <strong>1999</strong>,Added Regular expressions and added the try catch.</li>
-                          <li><strong>ECMAScript 4</strong> - was never released.</li>
-                          <li><strong>ECMAScript 5</strong> - Was developed in the year <strong>2009</strong>,Added "strict mode" and added Json support.</li>
-                          <li><strong>ECMAScript 5.1</strong> - Was developed in the year <strong>2011</strong>,Editorial changes.</li>
-                          <li><strong>ECMAScript 6</strong> - Was developed in the year <strong>2015</strong>, Added classes and modules.</li>
-                          <li><strong>ECMAScript 7</strong> - Was developed in the year <strong>2016</strong>, Added exponential operator (**) and added array.prototype.includes</li>
-                      </ul> 
-                            
+                        <ul>
+                            <li><strong>ECMAScript 1</strong> - Was developed in the year <strong>1997</strong>,First edition of ECMAScript.</li>
+                            <li><strong>ECMAScript 2</strong> - Was developed in the year <strong>1998</strong>,Editorial changes.</li>
+                            <li><strong>ECMAScript 3</strong> - Was developed in the year <strong>1999</strong>,Added Regular expressions and added the try catch.</li>
+                            <li><strong>ECMAScript 4</strong> - was never released.</li>
+                            <li><strong>ECMAScript 5</strong> - Was developed in the year <strong>2009</strong>,Added "strict mode" and added Json support.</li>
+                            <li><strong>ECMAScript 5.1</strong> - Was developed in the year <strong>2011</strong>,Editorial changes.</li>
+                            <li><strong>ECMAScript 6</strong> - Was developed in the year <strong>2015</strong>, Added classes and modules.</li>
+                            <li><strong>ECMAScript 7</strong> - Was developed in the year <strong>2016</strong>, Added exponential operator (**) and added array.prototype.includes</li>
+                        </ul> 
+
                         <h3>JavaScript Execution Environment</h3>                       
                         <ul>
                             <li>Core JavaScript(EcmaScript) Language Api</li>
                             <li>(Traditional) Browser Object Model(BOM)Api</li>
                             <ul>
-                             <li> Window,Navigator,Screen,Location,History</li>
-                             <li>Document Object Model (DOM) Api</li>
+                                <li> Window,Navigator,Screen,Location,History</li>
+                                <li>Document Object Model (DOM) Api</li>
                                 <ul><li>Node,Document,Element,Text,Attr,Document type,etc.</li>
-                                <li>Event, EvenTarget, EventListener, etc.</li>
-                                <li>CSSStylesheet, CSSRule, etc.</li>
+                                    <li>Event, EvenTarget, EventListener, etc.</li>
+                                    <li>CSSStylesheet, CSSRule, etc.</li>
                                 </ul> 
                                 <li>Miscellaneous Javascript Web APIs</li>  
                                 <ul>
@@ -490,119 +521,119 @@
                             <li>Retrieve references to nodes (or node collection)in the DOM</li>
                             <ul>
                                 <li>getElementById()</li>
-                                     <div class="code-sample">
-                                        <span class="comment">// getElementById()</span><br>
-                                        <span class="indent"> var myElement = document.getElementById("Hello");</span><br>
-                                                                    
-                                    </div>
+                                <div class="code-sample">
+                                    <span class="comment">// getElementById()</span><br>
+                                    <span class="indent"> var myElement = document.getElementById("Hello");</span><br>
+
+                                </div>
                                 <li>getElementsByTagName(), getElementsByClassName()</li>
-                                     <div class="code-sample">
-                                        <span class="comment">// getElementByTagName()</span><br>
-                                        <span class="indent"> var x = document.getElementsByTagName("p");</span><br>                                     
-                                    </div>
-                                     <div class="code-sample">
-                                        <span class="comment">// getElementByClassName()</span><br>
-                                        <span class="indent"> var x = document.getElementsByClassName("intro");</span><br>                                     
-                                    </div>                                                                     
+                                <div class="code-sample">
+                                    <span class="comment">// getElementByTagName()</span><br>
+                                    <span class="indent"> var x = document.getElementsByTagName("p");</span><br>                                     
+                                </div>
+                                <div class="code-sample">
+                                    <span class="comment">// getElementByClassName()</span><br>
+                                    <span class="indent"> var x = document.getElementsByClassName("intro");</span><br>                                     
+                                </div>                                                                     
                                 <li>querySelector(), querySelectorAll()</li>
-                                     <div class="code-sample">
-                                        <span class="comment">// querySelector()</span><br>
-                                        <span class="indent"> var x = document.querySelector("p.intro");</span><br>                                     
-                                    </div>
-                                     <div class="code-sample">
-                                        <span class="comment">// querySelectorAll()</span><br>
-                                        <span class="indent"> var x = document.querySelectorAll("p.intro");</span><br>                                     
-                                    </div>                                                                       
+                                <div class="code-sample">
+                                    <span class="comment">// querySelector()</span><br>
+                                    <span class="indent"> var x = document.querySelector("p.intro");</span><br>                                     
+                                </div>
+                                <div class="code-sample">
+                                    <span class="comment">// querySelectorAll()</span><br>
+                                    <span class="indent"> var x = document.querySelectorAll("p.intro");</span><br>                                     
+                                </div>                                                                       
                             </ul>
                             <li>traverse the DOM tree (from a given node)</li>
                             <ul>
                                 <li>firstChild,lastChild,nextSibling,previousSibling</li>
-                                     <div class="code-sample">
-                                        <span class="comment">// firstChild</span><br>
-                                        <span class="indent">var x = document.getElementById("myList").firstChild.innerHTML;</span><br>                      
-                                    </div>
-                                     <div class="code-sample">
-                                        <span class="comment">// lastChild</span><br>
-                                        <span class="indent">var x = document.getElementById("myList").lastChild.innerHTML;</span><br>                       
-                                    </div>
-                                     <div class="code-sample">
-                                        <span class="comment">// nextSibling</span><br>
-                                        <span class="indent">var x = document.getElementById("item1").nextSibling.innerHTML;</span><br>                                     
-                                    </div>
-                                     <div class="code-sample">
-                                        <span class="comment">// previousSibling</span><br>
-                                        <span class="indent">var x = document.getElementById("item2").previousSibling.innerHTML;</span><br>                                     
-                                    </div>                                                                                                                                            
+                                <div class="code-sample">
+                                    <span class="comment">// firstChild</span><br>
+                                    <span class="indent">var x = document.getElementById("myList").firstChild.innerHTML;</span><br>                      
+                                </div>
+                                <div class="code-sample">
+                                    <span class="comment">// lastChild</span><br>
+                                    <span class="indent">var x = document.getElementById("myList").lastChild.innerHTML;</span><br>                       
+                                </div>
+                                <div class="code-sample">
+                                    <span class="comment">// nextSibling</span><br>
+                                    <span class="indent">var x = document.getElementById("item1").nextSibling.innerHTML;</span><br>                                     
+                                </div>
+                                <div class="code-sample">
+                                    <span class="comment">// previousSibling</span><br>
+                                    <span class="indent">var x = document.getElementById("item2").previousSibling.innerHTML;</span><br>                                     
+                                </div>                                                                                                                                            
                                 <li>firstElementChild,lastElementChild,nextElementSibling,previousElementSibling</li>
-                                     <div class="code-sample">
-                                        <span class="comment">// firstElementChild</span><br>
-                                        <span class="indent">var x = document.getElementById("myList").firstElementChild.innerHTML;</span><br>                                     
-                                    </div>  
-                                     <div class="code-sample">
-                                        <span class="comment">// lastElementChild</span><br>
-                                        <span class="indent">var x = document.getElementById("myList").lastElementChild.innerHTML;</span><br>                                     
-                                    </div>  
-                                     <div class="code-sample">
-                                        <span class="comment">// nextElementSibling</span><br>
-                                        <span class="indent">var x = document.getElementById("item1").nextElementSibling.innerHTML;</span><br>                                     
-                                    </div>  
-                                     <div class="code-sample">
-                                        <span class="comment">// previousElementSibling</span><br>
-                                        <span class="indent">var x = document.getElementById("item2").previousElementSibling<br>.innerHTML;</span><br>                                     
-                                    </div>                                                                                                                                              
+                                <div class="code-sample">
+                                    <span class="comment">// firstElementChild</span><br>
+                                    <span class="indent">var x = document.getElementById("myList").firstElementChild.innerHTML;</span><br>                                     
+                                </div>  
+                                <div class="code-sample">
+                                    <span class="comment">// lastElementChild</span><br>
+                                    <span class="indent">var x = document.getElementById("myList").lastElementChild.innerHTML;</span><br>                                     
+                                </div>  
+                                <div class="code-sample">
+                                    <span class="comment">// nextElementSibling</span><br>
+                                    <span class="indent">var x = document.getElementById("item1").nextElementSibling.innerHTML;</span><br>                                     
+                                </div>  
+                                <div class="code-sample">
+                                    <span class="comment">// previousElementSibling</span><br>
+                                    <span class="indent">var x = document.getElementById("item2").previousElementSibling<br>.innerHTML;</span><br>                                     
+                                </div>                                                                                                                                              
                             </ul>
                             <li>construct/copy nodes</li>
                             <ul>
                                 <li>createElement(),createTextNode(),createAttribute(), etc</li>
-                                    <div class="code-sample" id="s">
-                                        <span class="comment">// createElement()</span><br>
-                                        <span class="indent">var btn = document.createElement("BUTTON");</span><br>                                     
-                                    </div>  
-                                     <div class="code-sample">
-                                        <span class="comment">// createTextNode()</span><br>
-                                        <span class="indent">var t = document.createTextNode("Hello World");</span><br>                                     
-                                    </div>  
-                                     <div class="code-sample">
-                                        <span class="comment">// createAttribute()</span><br>
-                                        <span class="indent">var att = document.createAttribute("attrib");</span><br>                                     
-                                    </div>  
-                                      
+                                <div class="code-sample" id="s">
+                                    <span class="comment">// createElement()</span><br>
+                                    <span class="indent">var btn = document.createElement("BUTTON");</span><br>                                     
+                                </div>  
+                                <div class="code-sample">
+                                    <span class="comment">// createTextNode()</span><br>
+                                    <span class="indent">var t = document.createTextNode("Hello World");</span><br>                                     
+                                </div>  
+                                <div class="code-sample">
+                                    <span class="comment">// createAttribute()</span><br>
+                                    <span class="indent">var att = document.createAttribute("attrib");</span><br>                                     
+                                </div>  
+
                                 <li><a onclick="myFunction()">cloneNode()</a>,importNode()</li>                                                              
 
-                                    <div class ="code-sample" >
-                                        <span class="comment">// cloneNode()</span><br>
-                                        <span class="indent">var itm = document.getElementById("myList2").lastChild;</span><br>
-                                        <span class="indent">var cln = itm.cloneNode(true);</span>
-                                    </div>
-                                 
-                                    
-                                     <div class="code-sample" id="s">
-                                        <span class="comment">// importNode()</span><br>
-                                        <span class="indent">var newNode = document.importNode(oldNode, true);</span><br>
-                                                                     
-                                    </div>                                                            
+                                <div class ="code-sample" >
+                                    <span class="comment">// cloneNode()</span><br>
+                                    <span class="indent">var itm = document.getElementById("myList2").lastChild;</span><br>
+                                    <span class="indent">var cln = itm.cloneNode(true);</span>
+                                </div>
+
+
+                                <div class="code-sample" id="s">
+                                    <span class="comment">// importNode()</span><br>
+                                    <span class="indent">var newNode = document.importNode(oldNode, true);</span><br>
+
+                                </div>                                                            
                             </ul>
                             <li>Manipulate the DOM tree</li>
                             <ul>
                                 <li>appendChild(),insertBefore(), replaceChild()</li>
-                                    
-                                     <div class="code-sample" id="s">
-                                        <span class="comment">// appendChild()</span><br>
-                                        <span class="indent">var node = document.createElement("LI");</span><br>
-                                        <span class="indent">var textnode = document.createTextNode("Water");</span><br>                                     <span class="indent">node.appendChild(textnode); </span><br>
-                                        <span class="comment">// insertBefore()</span><br>
-                                        <span class="indent">var list = document.getElementById("myList");</span><br>                                     <span class="indent">list.insertBefore(newItem, list.childNodes[0]);</span><br>
-                                        <span class="comment">// replaceChild()</span><br>
-                                        <span class="indent">var item = document.getElementById("myList").childNodes[0];</span><br>
-                                        <span class="indent">item.replaceChild(textnode, item.childNodes[0]);</span>                                                                             
-                                    </div>
-                                                                              
+
+                                <div class="code-sample" id="s">
+                                    <span class="comment">// appendChild()</span><br>
+                                    <span class="indent">var node = document.createElement("LI");</span><br>
+                                    <span class="indent">var textnode = document.createTextNode("Water");</span><br>                                     <span class="indent">node.appendChild(textnode); </span><br>
+                                    <span class="comment">// insertBefore()</span><br>
+                                    <span class="indent">var list = document.getElementById("myList");</span><br>                                     <span class="indent">list.insertBefore(newItem, list.childNodes[0]);</span><br>
+                                    <span class="comment">// replaceChild()</span><br>
+                                    <span class="indent">var item = document.getElementById("myList").childNodes[0];</span><br>
+                                    <span class="indent">item.replaceChild(textnode, item.childNodes[0]);</span>                                                                             
+                                </div>
+
                                 <li>adoptNode()</li>
-                                     <div class="code-sample">
-                                        <span class="comment">// adoptNode()</span><br>
-                                        <span class="indent"> var frame = document.getElementsByTagName("IFRAME")[0]</span><br>
-                                        <span class="indent"> var h = frame.contentWindow.document.getElementsByTagName("H1")[0];</span><br>   
-                                        <span class="indent"> var x = document.adoptNode(h);</span><br>                                        
+                                <div class="code-sample">
+                                    <span class="comment">// adoptNode()</span><br>
+                                    <span class="indent"> var frame = document.getElementsByTagName("IFRAME")[0]</span><br>
+                                    <span class="indent"> var h = frame.contentWindow.document.getElementsByTagName("H1")[0];</span><br>   
+                                    <span class="indent"> var x = document.adoptNode(h);</span><br>                                        
                                 </div>                                
                             </ul>
                             <li>miscellaneous attributes and methods</li>
@@ -612,7 +643,7 @@
                                 <li>ownerDocument,documentElement</li>
                                 <li>normalize()</li>
                             </ul>
-                            
+
                         </ul>
                     </div>
                 </div>
