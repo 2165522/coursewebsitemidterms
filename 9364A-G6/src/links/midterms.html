@@ -248,42 +248,168 @@
                                 <li>link pseudo-classes</li>
                                 <ul>
                                     <li>:link</li>
+                                    <div class = "code-sample">
+                                    <span class = "comment">/*unvisited link*/</span><br>
+                                    a:link {<br>
+                                    <span class = "indent"></span>color: #FF0000;<br>}
+                                    </div>
                                     <li>:visited</li>
+                                    <div class = "code-sample">
+                                    <span class = "comment">/*visited link*/</span><br>
+                                    a:visited {<br>
+                                    <span class = "indent"></span>color: #OOFFOO;<br>}
+                                    </div>
                                 </ul>
                                 <li>user action pseudo-classes</li>
                                 <ul>
                                     <li>:hover</li>
+                                    <div class = "code-sample">
+                                    <span class = "comment">/*mouse over link*/</span><br>
+                                    a:hover {<br>
+                                    <span class = "indent"></span>color: #FF00FF;<br>}
+                                    </div>
                                     <li>:active</li>
+                                    <div class = "code-sample">
+                                    <span class = "comment">/*selected link*/</span><br>
+                                    a:active {<br>
+                                    <span class = "indent"></span>color: #0000FF;<br>}
+                                    </div>
                                     <li>:focus</li>
+                                    <div class = "code-sample">
+                                        <span class = "comment">/*triggered when the hyperlink has focus*/</span><br>
+                                        a:focus {<br>
+                                        <span class = "indent"></span>color: #099CC;<br>}
+                                    </div>
                                 </ul>
                             </ul>
                             <li>Target Pseudo-Class</li>
                             <ul>
                                 <li>:target</li>
+                                <div class = "code-sample">
+                                    h1:target {<br>
+                                    <span class = "indent"></span>font-size: 25px;<br>
+                                    <span class = "indent"></span>text-decoration: italized;<br>
+                                    <span class = "indent"></span>color: #37aee4;<br>}
+                                </div>
                             </ul>
                             <li>Language Pseudo-Class</li>
                             <ul>
                                 <li>:lang()</li>
+                                <div class = "code-sample">
+                                p:lang(it) { <br>
+                                <span class = "indent"></span>background: green;<br>}
+                                </div>
                             </ul>
                             <li>UI Element States Pseudo-Classes</li>
                             <ul>
-                                <li>:enbled</li>
-                                <li>:disabled></li>
+                                <li>:enabled</li>
+                                <div class = "code-sample">
+                                    <span class = "comment">/*Selects enabled input*/</span><br>
+                                    input:enabled {<br>
+                                    <span class= "indent"></span>color: yellow;<br>}
+                                </div>
+                                <li>:disabled</li>
+                                 <div class = "code-sample">
+                                    <span class = "comment">/*Selects disabled input*/</span><br>
+                                    input:disabled {<br>
+                                    <span class= "indent"></span>background-color: red;<br>}
+                                </div>
                                 <li>:checked</li>
-                                <li>:indeterminte</li>
+                                <div class = "code-sample">
+                                    <span class = "comment">/*Matches checked radio, checkbox, etc.*/</span><br>
+                                    :checked {<br>
+                                    <span class = "indent"></span>border: 5px red;<br>}
+                                </div>
+                                <li>:indeterminate</li>
+                                <div class = "code-sample">
+                                    <span class = "comment">/*Selects input  that the status is indeterminate*/</span><br>
+                                    input:indeterminate {<br>
+                                    <span class = "indent"></span>background: violet;<br>}
+                                </div>
                             </ul>
                             <li>Structural Pseudo-Classes</li>
                             <ul>
                                 <li>:root</li>
-                                <li>:first-child, :last-child, :only-child</li>
-                                <li>:nth-child(), :nth-last-child()</li>
-                                <li>:first-of-type, :last-of-type, :only-of-type</li>
-                                <li>:nth-of-type(), :nth-last-of-type()</li>
+                                <div class = "code-sample">
+                                    <span class = "comment">/*Selects the root element*/</span><br>
+                                    :root { <br>
+                                    <span class = "indent"></span>background: blue;<br>}
+                                </div>
+                                <li>:first-child</li>
+                                <div class = "code-sample">
+                                    <span class = "comment">/*Selects any type that is the 1st element among its siblings*/</span><br>
+                                    p:first-child {<br>
+                                    <span class = "indent"></span>color: yellow;<br>}
+                                </div>
+                                <li>:last-child</li>
+                                <div class = "code-sample">
+                                    <span class = "comment">/*Selects any type that is the last element among its siblings*/</span><br>
+                                    p:last-child {<br>
+                                    <span class = "indent"></span>color: brown;<br>}
+                                </div>
+                                <li>:only-child</li>
+                                <div class = "code-sample">
+                                    <span class = "comment">/*Selects every type if and only if it is the only child of its parent*/</span><br>
+                                    p:only-child {<br>
+                                    <span class = "indent"></span>color: green;<br>}
+                                </div>
+                                <li>:nth-child()</li>
+                                <div class = "code-sample">
+                                    <span class = "comment">/*Selects every nth element among any group of siblings*/</span><br>
+                                    :nth-child(7n) {<br>
+                                    <span class = "indent"></span>color: yellow;<br>}
+                                </div>
+                                <li>:nth-last-child()</li>
+                                <div class = "code-sample">
+                                    <span class = "comment">/*Selects every nth element but counting backwards from the last child*/</span><br>
+                                    :nth-last-child (5n) {<br>
+                                    <span class = "indent"></span>color: violet;<br>}
+                                </div>
+                                <li>:first-of-type</li>
+                                <div class = "code-sample">
+                                    <span class = "comment">/*Selects any type that is the 1st element among its siblings*/</span><br>
+                                    p:first-of-type {<br>
+                                    <span class = "indent"></span>color: black;<br>}
+                                </div>
+                                <li>:last-of-type</li>
+                                <div class = "code-sample">
+                                    <span class ="comment">/*Selects any type that is the lsat element among its siblings*/</span><br>
+                                     p:last-of-type {<br>
+                                    <span class = "indent"></span>color: brown;<br>}
+                                </div>
+                                <li>:only-of-type</li>
+                                <div class = "code-sample">
+                                    <span class = "comment">/*Selects each type if and only if it is the only type element inside its parent*/</span><br>
+                                    p:only-of-type {<br>
+                                    <span class = "indent"></span>color: red;<br>}
+                                </div>
+                                <li>:nth-of-type()</li>
+                                <div class = "code-sample">
+                                    <span class = "comment">/*Selects every nth type element among any group of siblings*/</span><br>
+                                    p:nth-of-type(8n) {<br>
+                                    <span class = "indent"></span>color: green;<br>}
+                                </div>
+                                <li>:nth-last-of-type()</li>
+                                <div class = "code-sample">
+                                    <span class = "comment">Selects every nth type element but counting backwards from the last one*/</span><br>
+                                    p:nth-last-of-type (2n) {<br>
+                                    <span class = "indent"></span>color: beige;<br>}
+                                </div>
                                 <li>:empty</li>
+                                <div class = "code-sample">
+                                    <span class = "comment">/*Selects any type that has no content*/</span><br>
+                                    div: empty {<br>
+                                    <span class = "indent"></span>background: lime;<br>}
+                                </div>
                             </ul>
                             <li>Negation Pseudo-Class</li>
                             <ul>
                                 <li>:not()</li>
+                                <div class = "code-sample">
+                                    <span class = "comment">/*Selects any element that is not the specified type*/</span><br>
+                                    :not(h1) {<br>
+                                    <span class = "indent"></span>color: grey;<br>}
+                                </div>
                             </ul>
                         </ul>
                         <h3>Pseudo Combinators</h3>
@@ -293,8 +419,8 @@
                             <li>child combinator (>)</li>
                             <li>sibling combinators</li>
                             <ul>
-                                <li>adjacent sibling combinator (+)</li>
-                                <li>general sibling combinator (~)</li>
+                                <li>adjacent sibling combinator (+)</li> <!--Provide Example -->
+                                <li>general sibling combinator (~)</li> <!--Provide Example -->
                             </ul>
                         </ul>
                         <h3>CSS Rule Precedence</h3>
@@ -335,10 +461,10 @@
                                     <li>used by browser vendors as a <i>prefix </i> for the names of <i>experimental </i>or <i>non-standard </i>CSS properties; lately, vendors are moving away from vendor prefixes in favor of use-controlled flags or preferences</li>
                                     <li>Example:</li>
                                     <ul>
-                                        <li>-webkit-</li>
-                                        <li>-moz-</li>
-                                        <li>-o-</li>
-                                        <li>-ms-</li>
+                                        <li>-webkit-</li> <!--Provide Example -->
+                                        <li>-moz-</li> <!--Provide Example -->
+                                        <li>-o-</li> <!--Provide Example -->
+                                        <li>-ms-</li> <!--Provide Example -->
                                     </ul>
                                 </ul>
                                 <li>custom properties a.k.a, CSS Variables (experimental)</li>
@@ -411,27 +537,21 @@
                                         <li>color keywords: blue</li>
                                         <li>RGB hexadecimal notation</li>
                                         <ul>
-                                            <li>#C0C0C0</li>
-                                            <li>#008000</li>
-                                            <li>#FF00FF</li>
+                                           <!--Provide Example -->
                                         </ul>
                                         <li>RGB functions</li>
                                         <ul>
-                                            <li>rgb(255,0,0)</li>
-                                            <li>rgb(0,0,255)</li>
-                                            <li>rgb(0,255,0)</li>
+                                            <!--Provide Example -->
                                         </ul>
                                         <li>HSL functions</li>
                                         <ul>
-                                            <li>hsl(311, 40%, 69%)</li>
-                                            <li>hsl(64, 40%, 69%)</li>
-                                            <li>hsl(96, 25%, 37%)</li>
+                                            <!--Provide Example -->
                                         </ul>
                                         <li>currentcolor, transparent</li>
                                     </ul>
                                     <li>strings</li>
                                     <ul>
-                                        <li>delimited by single quotes (') or double quotes (")</li>
+                                        <li>delimited by single quotes (') or double quotes (")</li> <!--Provide Example -->
                                     </ul>
                                     <li>functions</li>
                                     <li>miscellaneous types</li>

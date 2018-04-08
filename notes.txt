@@ -94,7 +94,7 @@ CASCADING STYLE SHEETS
 	- properties
 		= short-hand properties
 			> allows authors to specify the values of several properties with a single property
-			> e.g background,font, margin, padding, border, border-left, border-right, etc.
+			> e.g background, font, margin, padding, border, border-left, border-right, etc.
 		= vendor specific extensions (aka, vendor prefixes)
 			> used by browser vendors as a prefix for the names of experimental or non-standard CSS properties; lately, vendors are moving away from vendor prefixes in favor of use-controlled flags or preferences.
 			> e.g -webkit-, -moz-, -o-, -ms-, etc.
