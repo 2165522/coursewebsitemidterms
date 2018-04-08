@@ -473,7 +473,7 @@
                         <h3>Document Object Model (DOM) API</h3>
                         <ul>
                             <li>API that allows access to the HTML document from within scripts associated with the web page</li>
-                            <li>a parsed HTML document is represented by a <a href="https://www.w3schools.com/js/js_htmldom.asp">DOM tree</a>, which contains nodes representing elements, element attributes, tectual content and other HTML document components</li>
+                            <li>a parsed HTML document is represented by a <a href="https://www.w3.org/TR/DOM-Level-2-Core/introduction.html">DOM tree</a>, which contains nodes representing elements, element attributes, tectual content and other HTML document components</li>
                             <li>Can be accessed via the Document object property</li>
                         </ul>
                         <h3>Functionalities</h3>
@@ -542,6 +542,68 @@
                                         <span class="indent">var x = document.getElementById("item2").previousElementSibling<br>.innerHTML;</span><br>                                     
                                     </div>                                                                                                                                              
                             </ul>
+                            <li>construct/copy nodes</li>
+                            <ul>
+                                <li>createElement(),createTextNode(),createAttribute(), etc</li>
+                                    <div class="code-sample" id="s">
+                                        <span class="comment">// createElement()</span><br>
+                                        <span class="indent">var btn = document.createElement("BUTTON");</span><br>                                     
+                                    </div>  
+                                     <div class="code-sample">
+                                        <span class="comment">// createTextNode()</span><br>
+                                        <span class="indent">var t = document.createTextNode("Hello World");</span><br>                                     
+                                    </div>  
+                                     <div class="code-sample">
+                                        <span class="comment">// createAttribute()</span><br>
+                                        <span class="indent">var att = document.createAttribute("attrib");</span><br>                                     
+                                    </div>  
+                                      
+                                <li><a onclick="myFunction()">cloneNode()</a>,importNode()</li>                                                              
+
+                                    <div class ="code-sample" >
+                                        <span class="comment">// cloneNode()</span><br>
+                                        <span class="indent">var itm = document.getElementById("myList2").lastChild;</span><br>
+                                        <span class="indent">var cln = itm.cloneNode(true);</span>
+                                    </div>
+                                 
+                                    
+                                     <div class="code-sample" id="s">
+                                        <span class="comment">// importNode()</span><br>
+                                        <span class="indent">var newNode = document.importNode(oldNode, true);</span><br>
+                                                                     
+                                    </div>                                                            
+                            </ul>
+                            <li>Manipulate the DOM tree</li>
+                            <ul>
+                                <li>appendChild(),insertBefore(), replaceChild()</li>
+                                    
+                                     <div class="code-sample" id="s">
+                                        <span class="comment">// appendChild()</span><br>
+                                        <span class="indent">var node = document.createElement("LI");</span><br>
+                                        <span class="indent">var textnode = document.createTextNode("Water");</span><br>                                     <span class="indent">node.appendChild(textnode); </span><br>
+                                        <span class="comment">// insertBefore()</span><br>
+                                        <span class="indent">var list = document.getElementById("myList");</span><br>                                     <span class="indent">list.insertBefore(newItem, list.childNodes[0]);</span><br>
+                                        <span class="comment">// replaceChild()</span><br>
+                                        <span class="indent">var item = document.getElementById("myList").childNodes[0];</span><br>
+                                        <span class="indent">item.replaceChild(textnode, item.childNodes[0]);</span>                                                                             
+                                    </div>
+                                                                              
+                                <li>adoptNode()</li>
+                                     <div class="code-sample">
+                                        <span class="comment">// adoptNode()</span><br>
+                                        <span class="indent"> var frame = document.getElementsByTagName("IFRAME")[0]</span><br>
+                                        <span class="indent"> var h = frame.contentWindow.document.getElementsByTagName("H1")[0];</span><br>   
+                                        <span class="indent"> var x = document.adoptNode(h);</span><br>                                        
+                                </div>                                
+                            </ul>
+                            <li>miscellaneous attributes and methods</li>
+                            <ul>
+                                <li>nodeType,nodeName,nodeValue</li>
+                                <li>attributes,id,tagName,className</li>
+                                <li>ownerDocument,documentElement</li>
+                                <li>normalize()</li>
+                            </ul>
+                            
                         </ul>
                     </div>
                 </div>
