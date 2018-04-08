@@ -715,15 +715,16 @@
                         </ul>
                         <h3>Functionalities</h3>
                         <ul>
+                            <span class="anchor" id="keyframes2"></span>
                             <li>Retrieve references to nodes (or node collection)in the DOM</li>
                             <ul>
-                                <li><a href ="#getElementById()" onclick="toggle_visibility('getElementById()');">getElementById()</a></li>
+                                <li><a href ="#keyframes2" onclick="toggle_visibility('getElementById()');">getElementById()</a></li>
                                 <div class="code-sample" id="getElementById()">
                                     <span class="comment">// getElementById()</span><br>
                                     var myElement = document.getElementById("Hello");<br>
                                 </div>
-                                <li><a href ="#getElementsByTagName()" onclick="toggle_visibility('getElementsByTagName()');">getElementsByTagName()</a>, 
-								<a href ="#getElementsByClassName()" onclick="toggle_visibility('getElementsByClassName()');">getElementsByClassName()</a>
+                                <li><a href ="#keyframes2" onclick="toggle_visibility('getElementsByTagName()');">getElementsByTagName()</a>, 
+								<a href ="#keyframes2" onclick="toggle_visibility('getElementsByClassName()');">getElementsByClassName()</a>
 								</li>
                                 <div class="code-sample" id="getElementsByTagName()">
                                     <span class="comment">// getElementByTagName()</span><br>
@@ -732,26 +733,28 @@
                                 <div class="code-sample" id="getElementsByClassName()">
                                     <span class="comment">// getElementByClassName()</span><br>
                                     var x = document.getElementsByClassName("intro");<br>                
-                                </div>                                                                     
-                                <li><a href ="#querySelector()" onclick="toggle_visibility('querySelector()');">querySelector()</a>, 
-								<a href ="#querySelectorAll()" onclick="toggle_visibility('querySelectorAll()');">querySelectorAll()</a>
+                                </div>
+                                                                                                   
+                                <li><a href ="#keyframes2" onclick="toggle_visibility('querySelector');">querySelector()</a>, 
+								<a href ="#keyframes2" onclick="toggle_visibility('querySelectorAll');">querySelectorAll()</a>
 								</li>
-                                <div class="code-sample" id="querySelector()">
+                                <div class="code-sample" id="querySelector">
                                     <span class="comment">// querySelector()</span><br>
                                     var x = document.querySelector("p.intro");<br>  
                                 </div>
-                                <div class="code-sample" id="querySelectorAll()">
+                                <div class="code-sample" id="querySelectorAll">
                                     <span class="comment">// querySelectorAll()</span><br>
                                     var x = document.querySelectorAll("p.intro");<br>
                                 </div>                                                                       
                             </ul>
+                            <span class="anchor" id="keyframes2"></span>
                             <li>traverse the DOM tree (from a given node)</li>
                             <ul>                     
                                 <span class="anchor" id="keyframes2"></span>                               
-                                <li><a href="#firstChild" onclick="toggle_visibility('firstChild');">firstChild</a>,
-								<a href ="#lastChild" onclick="toggle_visibility('lastChild');">lastChild</a>,
-								<a href ="#nextSibling" onclick="toggle_visibility('nextSibling');">nextSibling</a>,
-								<a href ="#previousSibling" onclick="toggle_visibility('previousSibling');">previousSibling</a>
+                                <li><a href="#keyframes2" onclick="toggle_visibility('firstChild');">firstChild</a>,
+								<a href ="#keyframes2" onclick="toggle_visibility('lastChild');">lastChild</a>,
+								<a href ="#keyframes2" onclick="toggle_visibility('nextSibling');">nextSibling</a>,
+								<a href ="#keyframes2" onclick="toggle_visibility('previousSibling');">previousSibling</a>
 								</li>
                                 <div class="code-sample" id="firstChild">
                                     <span class="comment">// firstChild</span><br>
@@ -769,12 +772,12 @@
                                     <span class="comment">// previousSibling</span><br>
                                    var x = document.getElementById("item2").previousSibling.innerHTML;<br>    
                                 </div>                                                                                                                                            
-                                <li><a href ="#firstElementChild" onclick="toggle_visibility('firstElementChild');">firstElementChild</a>,
-								<a href ="#lastElementChild" onclick="toggle_visibility('lastElementChild');">lastElementChild</a>,
-								<a href ="#nextElementSibling" onclick="toggle_visibility('nextElementSibling');">nextElementSibling,</a>
-								<a href ="#previousElementSibling" onclick="toggle_visibility('previousElementSibling');">previousElementSibling</a>
+                                <li><a href ="#keyframes2" onclick="toggle_visibility('firstElementChild');">firstElementChild</a>,
+								<a href ="#keyframes2" onclick="toggle_visibility('lastElementChild');">lastElementChild</a>,
+								<a href ="#keyframes2" onclick="toggle_visibility('nextElementSibling');">nextElementSibling,</a>
+								<a href ="#keyframes2" onclick="toggle_visibility('previousElementSibling');">previousElementSibling</a>
 								</li>
-                                <div class="code-sample" id="firstElementChild"
+                                <div class="code-sample" id="firstElementChild">
                                     <span class="comment">// firstElementChild</span><br>
                                    var x = document.getElementById("myList").firstElementChild.innerHTML;<br>                                     
                                 </div>  
@@ -791,11 +794,12 @@
                                     <span class="indent">var x = document.getElementById("item2").previousElementSibling<br>.innerHTML;</span><br>                                     
                                 </div>                                                                                                                                              
                             </ul>
+                            <span class="anchor" id="keyframes2"></span>  
                             <li>construct/copy nodes</li>
                             <ul>
-                                <li><a href ="#createElement()" onclick="toggle_visibility('createElement()');">createElement()</a>,
-								<a href ="#createTextNode()" onclick="toggle_visibility('createTextNode()');">createTextNode()</a>,
-								<a href ="#createAttribute()" onclick="toggle_visibility('createAttribute()');">createAttribute()</a>, etc</li>
+                                <li><a href ="#keyframes2" onclick="toggle_visibility('createElement()');">createElement()</a>,
+								<a href ="#keyframes2" onclick="toggle_visibility('createTextNode()');">createTextNode()</a>,
+								<a href ="#keyframes2" onclick="toggle_visibility('createAttribute()');">createAttribute()</a>, etc</li>
                                 <div class="code-sample" id="createElement()">
                                     <span class="comment">// createElement()</span><br>
                                     var btn = document.createElement("BUTTON");<br>                                     
@@ -809,8 +813,8 @@
                                     var att = document.createAttribute("attrib");<br>                                     
                                 </div>  
 
-                                <li><a href ="#cloneNode()" onclick="toggle_visibility('cloneNode()');">cloneNode()</a>,
-								<a href ="#importNode()" onclick="toggle_visibility('importNode()');">importNode()</a>
+                                <li><a href ="#keyframes2" onclick="toggle_visibility('cloneNode()');">cloneNode()</a>,
+								<a href ="#keyframes2" onclick="toggle_visibility('importNode()');">importNode()</a>
 								</li>                                                              
 
                                 <div class ="code-sample" id="cloneNode()">
@@ -825,11 +829,14 @@
                                     var newNode = document.importNode(oldNode, true);<br>
                                 </div>                                                            
                             </ul>
+                            <span class="anchor" id="keyframes2"></span> 
                             <li>Manipulate the DOM tree</li>
                             <ul>
-                                <li>appendChild(),insertBefore(), replaceChild()</li>
+                                <li><a href ="#keyframes2" onclick="toggle_visibility('ManDom');">appendChild()</a>
+                                    <a href ="#keyframes2" onclick="toggle_visibility('ManDom');">insertBefore()</a>,
+                                    <a href ="#keyframes2" onclick="toggle_visibility('ManDom');">replaceChild()</a></li>
 
-                                <div class="code-sample" id="s">
+                                <div class="code-sample" id="ManDom">
                                     <span class="comment">// appendChild()</span><br>
                                     <span class="indent">var node = document.createElement("LI");</span><br>
                                     <span class="indent">var textnode = document.createTextNode("Water");</span><br>                                     <span class="indent">node.appendChild(textnode); </span><br>
@@ -840,8 +847,8 @@
                                     <span class="indent">item.replaceChild(textnode, item.childNodes[0]);</span>                                                                             
                                 </div>
 
-                                <li>adoptNode()</li>
-                                <div class="code-sample">
+                                <li><a href ="#keyframes2" onclick="toggle_visibility('adoptNode');">adoptNode()</a></li>
+                                <div class="code-sample" id="adoptNode">
                                     <span class="comment">// adoptNode()</span><br>
                                     <span class="indent"> var frame = document.getElementsByTagName("IFRAME")[0]</span><br>
                                     <span class="indent"> var h = frame.contentWindow.document.getElementsByTagName("H1")[0];</span><br>   
