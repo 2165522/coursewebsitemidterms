@@ -467,18 +467,27 @@
                             <li>Core JavaScript(EcmaScript) Language Api</li>
                             <li>(Traditional) Browser Object Model(BOM)Api</li>
                             <ul>
-                             <li> Window,Navigator,Screen,Location,History</li>   
+                             <li> Window,Navigator,Screen,Location,History</li>
+                             <li>Document Object Model (DOM) Api</li>
+                                <ul><li>Node,Document,Element,Text,Attr,Document type,etc.</li>
+                                <li>Event, EvenTarget, EventListener, etc.</li>
+                                <li>CSSStylesheet, CSSRule, etc.</li>
+                                </ul> 
+                                <li>Miscellaneous Javascript Web APIs</li>  
+                                <ul>
+                                    <li>gelolocation,IndexedDb,Local storage, push notifaction, service workers, web sockets, web workers, XML HTTP request</li>
+                                </ul>
                             </ul>
                         </ul>
                         <h3>Document Object Model (DOM) API</h3>
                         <ul>
-                            <li>API that allows access to the HTML document from within scripts associated with the web page</li>
-                            <li>a parsed HTML document is represented by a <a href="https://www.w3.org/TR/DOM-Level-2-Core/introduction.html">DOM tree</a>, which contains nodes representing elements, element attributes, tectual content and other HTML document components</li>
-                            <li>Can be accessed via the Document object property</li>
+                            <li>API that allows access to the HTML document from within scripts associated with the web page.</li>
+                            <li>a parsed HTML document is represented by a <a href="https://www.w3.org/TR/DOM-Level-2-Core/introduction.html">DOM tree</a>, which contains nodes representing elements, element attributes, tectual content and other HTML document components.</li>
+                            <li>Can be accessed via the Document object property of the global window object.</li>
                         </ul>
                         <h3>Functionalities</h3>
                         <ul>
-                            <li>Retrieve references to node (or node collection)</li>
+                            <li>Retrieve references to nodes (or node collection)in the DOM</li>
                             <ul>
                                 <li>getElementById()</li>
                                      <div class="code-sample">
@@ -505,7 +514,7 @@
                                         <span class="indent"> var x = document.querySelectorAll("p.intro");</span><br>                                     
                                     </div>                                                                       
                             </ul>
-                            <li>Child Nodes</li>
+                            <li>traverse the DOM tree (from a given node)</li>
                             <ul>
                                 <li>firstChild,lastChild,nextSibling,previousSibling</li>
                                      <div class="code-sample">
