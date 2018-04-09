@@ -1,5 +1,7 @@
 CONTRIBUTORS
 ---------------------------------------------------
+USERNAME	  NAME
+---------------------------------------------------
 2165522 	- Earl Jethro Aaron Rimando
 khMic2019 	- Mark Israel Cantero
 Ray Servidad 	- Ray Oliver Servidad
@@ -8,6 +10,7 @@ vince, 2166538	- Vincent Ibalio
 
 LOG
 ---------------------------------------------------
+git log --reverse --pretty=format:"%h - %an, %ad : %s"
 
 5bb4793 - 2165522, Wed Apr 4 00:31:44 2018 +0800 : Added initial notes for the website
 fd9ae06 - 2165522, Wed Apr 4 00:33:21 2018 +0800 : Added prelim project
