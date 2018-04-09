@@ -1,0 +1,49 @@
+CONTRIBUTORS
+---------------------------------------------------
+2165522 	- Earl Jethro Aaron Rimando
+khMic2019 	- Mark Israel Cantero
+Ray Servidad 	- Ray Oliver Servidad
+Ervin		- Ervin Joshua Fernandez
+vince, 2166538	- Vincent Ibalio
+
+LOG
+---------------------------------------------------
+
+5bb4793 - 2165522, Wed Apr 4 00:31:44 2018 +0800 : Added initial notes for the website
+fd9ae06 - 2165522, Wed Apr 4 00:33:21 2018 +0800 : Added prelim project
+ef316de - 2165522, Wed Apr 4 13:09:00 2018 +0800 : Added additional notes
+482bf06 - khMic2019, Wed Apr 4 16:34:18 2018 +0800 : Add files via upload
+d8feced - 2165522, Wed Apr 4 20:45:44 2018 +0800 : updated the css and reconstructed the html file
+b1c16b3 - 2165522, Wed Apr 4 23:10:23 2018 +0800 : Updated notes.txt and added midterms.html
+39a6258 - 2165522, Wed Apr 4 23:12:33 2018 +0800 : Added updated notes.txt
+152b17b - 2165522, Thu Apr 5 13:46:06 2018 +0800 : Made changes to html and css
+42e2bd4 - Ray Servidad, Thu Apr 5 22:19:07 2018 +0800 : Provided the missing words in the notes.txt
+4385110 - Ray Servidad, Thu Apr 5 23:17:10 2018 +0800 : added notes in javascript in notes.txt
+429b368 - 2165522, Sat Apr 7 03:27:58 2018 +0800 : Added updated css and bootstrap dependencies
+56d4e03 - Ray Servidad, Sat Apr 7 23:25:19 2018 +0800 : Put contents in the html file
+5a144ca - Ray Servidad, Sun Apr 8 00:46:07 2018 +0800 : Completed the contents of CSS in html file
+b549ba9 - 2165522, Sun Apr 8 02:01:23 2018 +0800 : Update
+cd04e81 - 2165522, Sun Apr 8 02:54:41 2018 +0800 : Added classes for code-samples
+0e6adeb - Ray Servidad, Sun Apr 8 03:50:14 2018 +0800 : Fixed the lost of some contents
+17d67f8 - 2165522, Sun Apr 8 04:07:36 2018 +0800 : Integrated the contents inserted by Ray Oliver
+2724df5 - Ervin, Sun Apr 8 11:05:55 2018 +0800 : added JavaScript Notes(incomplete yet)
+e47d11c - Ervin, Sun Apr 8 14:43:58 2018 +0800 : Added more content to JavaScript
+b30d704 - Ervin, Sun Apr 8 14:57:58 2018 +0800 : Added slight modification to some missed notes in Javascript
+b483f99 - 2165522, Sun Apr 8 18:24:34 2018 +0800 : Added code-snippets to CSS selectors and at-rules
+8027f43 - Ray Servidad, Sun Apr 8 20:13:01 2018 +0800 : Added snippets in CSS Topic
+9502d27 - vince, Sun Apr 8 20:59:29 2018 +0800 : added examples
+786f677 - 2166538, Sun Apr 8 21:17:07 2018 +0800 : added samples
+b8565bf - Ervin, Sun Apr 8 21:25:14 2018 +0800 : made sligh modifications
+822c87a - Ervin, Sun Apr 8 21:25:33 2018 +0800 : Merge branch 'master' of https://github.com/2165522/coursewebsitemidterms
+44027ef - vince, Sun Apr 8 23:27:41 2018 +0800 : edit src
+be73e3c - Ervin, Mon Apr 9 00:10:01 2018 +0800 : added the onClick functionality in some parts of JavaScript notes
+dfa470b - vince, Mon Apr 9 01:08:27 2018 +0800 : added links
+71df4fb - Ervin, Mon Apr 9 01:43:14 2018 +0800 : finished the Javascript with OnClick functions
+0579068 - Ray Servidad, Mon Apr 9 02:48:14 2018 +0800 : Added onclick function in Pseudo Class Topic
+a43bf66 - Ray Servidad, Mon Apr 9 02:48:20 2018 +0800 : Merge branch 'master' of https://github.com/2165522/coursewebsitemidterms
+e6e68da - vince, Mon Apr 9 03:26:54 2018 +0800 : added quiz.txt
+7767d72 - Ray Servidad, Mon Apr 9 03:30:19 2018 +0800 : modified onclick animation in  the css pseudo classes topic
+7d7a4e6 - Ray Servidad, Mon Apr 9 03:30:24 2018 +0800 : Merge branch 'master' of https://github.com/2165522/coursewebsitemidterms
+1ab8780 - 2165522, Mon Apr 9 04:49:41 2018 +0800 : added the quizes for CSS and JScript
+4b8edfb - 2165522, Mon Apr 9 05:30:08 2018 +0800 : Added peereval and readme.txt
+9760acb - 2165522, Mon Apr 9 12:01:22 2018 +0800 : removed other files

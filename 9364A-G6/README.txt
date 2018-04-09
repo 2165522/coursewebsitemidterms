@@ -1,7 +1,8 @@
-// README
+/* README.txt */
 
 This project is a course notes website for the subject Web Technologies and Applications.
-This submission contains the course notes from prelims, and from midterms. The website
+This submission contains the course notes from prelims, and from midterms. At the end of every
+topic, a link to a quiz about that certain topic can be taken by the user. The website
 is hard-coded by our group with the help of the CSS Bootstrap 4 Framework, which helped us
 make our website responsive to any device screen sizes.
 
